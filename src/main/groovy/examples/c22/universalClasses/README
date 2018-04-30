@@ -1,0 +1,9 @@
+When the system is executed on a network of processing nodes 
+we have to run each node process in a script that initially 
+creates the network channels and then invokes the required 
+process.  
+
+ The best order for running the processes is 
+1) RunEmitter, 
+2) RunCollector and then 
+3) as many RunWorker processes as the number of workers required.
