@@ -6,59 +6,25 @@ apply plugin: 'java'
 
 sourceCompatibility = 1.8
 
-def jcspJarFile = null
-def groovyJCSPJarFile = null
-def home = null
-home = System.getenv('JCSP_HOME')
-if (home == null){
-    throw new GradleException('JCSP_HOME environment variable is not defined')
-}
-//println "JCSP home folder is $home"
-def currentJCSPLen = 100 // assume length of file name is less than 100 characters
-def currentGroovyJCSPLen = 100 // assume length of file name is less than 100 characters
-if ( new File(home).isDirectory()){
-    new File(home).eachFile { File f ->
-        def fName = f.name
-        //println "processing $fName"
-        if (fName =~ '^jcsp-.+jar$'){
-            def len = fName.length()
-            if (len <= currentJCSPLen) { // look for jar file with shortest name
-                jcspJarFile = f.name
-                currentJCSPLen = len
-            }
-        }
-        if (fName =~ '^groovyJCSP-.+jar$'){
-            def len = fName.length()
-            if (len <= currentGroovyJCSPLen) { // look for jar file with shortest name
-                groovyJCSPJarFile = f.name
-                currentGroovyJCSPLen = len
-            }
-        }
-    }
-}
-if ( jcspJarFile == null){
-    throw new GradleException('No jcsp library was found in $home')
-}
-if ( groovyJCSPJarFile == null){
-    throw new GradleException('No groovyJCSP library was found in $home')
-}
-println "using JCSP library $jcspJarFile"
-println "using groovyJCSP library $groovyJCSPJarFile"
+// you will need to change the name of the directory with the groovyJCSP library
+
+def groovyJCSPDir = "D:\\IJGradle\\groovyJCSP\\build\\libs"
+def groovyJCSPJarFile = "groovyJCSP-2.4.12-1.1.0.jar"
+
+println "using groovyJCSP library $groovyJCSPDir\\$groovyJCSPJarFile"
 
 repositories {
   mavenCentral()
   jcenter()
 }
 
-
-
 dependencies {
   compile 'org.codehaus.groovy:groovy-all:2.4.12'
-  compile fileTree(dir: "$home", include: ["$jcspJarFile"])
-  compile fileTree(dir: "$home", include: ["$groovyJCSPJarFile"])
+  compile 'cspforjava:jcsp:1.1.0'
+  compile fileTree(dir: "$groovyJCSPDir", include: ["$groovyJCSPJarFile"])
   compile group: 'junit', name: 'junit', version: '4.12'
   testCompile 'org.codehaus.groovy:groovy-all:2.4.12'
-  testCompile fileTree(dir: "$home", include: ["$jcspJarFile"])
-  testCompile fileTree(dir: "$home", include: ["$groovyJCSPJarFile"])
+  testCompile 'cspforjava:jcsp:1.1.0'
+  testCompile fileTree(dir: "$groovyJCSPDir", include: ["$groovyJCSPJarFile"])
   testCompile group: 'junit', name: 'junit', version: '4.12'
 }
