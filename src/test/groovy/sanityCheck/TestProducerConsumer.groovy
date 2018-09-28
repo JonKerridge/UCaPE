@@ -1,7 +1,5 @@
 package sanityCheck
 
-import examples.c02.ProduceHW
-import examples.c06.ConsumeHelloForTest
 import groovyJCSP.PAR
 
 // copyright 2012-18 Jon Kerridge
