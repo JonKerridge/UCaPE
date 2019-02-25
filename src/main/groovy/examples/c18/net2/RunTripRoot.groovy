@@ -12,8 +12,8 @@ Node.getInstance().init(rootAddress)
 def fromNodes = NetChannel.net2one()
 
 def String initialValue = Ask.string ( "Initial List Value ? ")
-def int nodes = Ask.Int ("Number of nodes (1..8) ? ", 1, 8)
-
+//def int nodes = Ask.Int ("Number of nodes (1..8) ? ", 1, 8)
+int nodes = 4
 def rootNode = new TripRoot ( fromNodes: fromNodes, 
                                nodes: nodes,
                                initialValue: initialValue )

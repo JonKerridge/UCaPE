@@ -4,24 +4,27 @@ import jcsp.lang.*;
 import examples.c24.SingleMachine.methods.defs;
 
 def timer = new CSTimer()
-def drive = "C"
-def inRoot = drive + ":\\Concordance\\SourceFiles\\"
-def outRoot = drive + ":\\Concordance\\OutputFiles\\Sequential\\"
+String workingDirectory = System.getProperty('user.dir')
+workingDirectory = workingDirectory + "\\"
+println "In folder $workingDirectory"
+//def drive = "C"
+//def inRoot = drive + ":\\Concordance\\SourceFiles\\"
+//def outRoot = drive + ":\\Concordance\\OutputFiles\\Sequential\\"
 def N = 6
 def minSeqLen = 0
-def runs = 8
-def timesFileName = outRoot + "Times" + N + minSeqLen + "_Seq.txt"
+def runs = 1
+def timesFileName = workingDirectory + "Times" + N + minSeqLen + "_Seq.txt"
 def timesFile = new File(timesFileName)
 if (timesFile.exists()) timesFile.delete()
 def timesWriter = timesFile.newPrintWriter()
 timesWriter.print "Seq\tSource\tN\tminSeqLen\t"
 timesWriter.println "Read\tGenerate\tEqualKeys\tConcordance\tTotal\tWords"
-def seqLens = ["ACM":2, "TMM":2, "WAD":2, "bible":2, "2bibles":3, "4bibles":5]
-for (source in ["ACM", "TMM", "WAD", "bible", "2bibles", "4bibles"]){
+def seqLens = ["ACM":2, "TMM":2, "WaD":2, "bible":2, "2bibles":3, "4bibles":5]
+for (source in ["ACM", "TMM", "WaD", "bible", "2bibles", "4bibles"]){
 //for (source in ["test0"]){
-	def fileName = inRoot + source + ".txt"
+	def fileName = workingDirectory + source + ".txt"
   minSeqLen = seqLens[source]
-	def outFileName = outRoot + source + N + minSeqLen + "_Seq.txt"
+	def outFileName = workingDirectory + source + N + minSeqLen + "_Seq.txt"
 	def outFile = new File(outFileName)
 	if (outFile.exists()) outFile.delete()
 	def printWriter = outFile.newPrintWriter()

@@ -3,6 +3,8 @@ To run system
 RunHost
 
 then run 
-LoadWorker FOUR times 
-	each with a different IP address
+RunNode2
+RunNode3
+RunNode4
+RunNode5
 

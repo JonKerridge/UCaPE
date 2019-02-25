@@ -25,7 +25,8 @@ Node.getInstance().init(nodeAddr)
 def workerIP = nodeAddr.getIpAddress()
 println "Worker is located at $workerIP"
 // create load channel
-def loadChannel = NetChannel.numberedNet2One(1, new CodeLoadingChannelFilter.FilterRX())
+//def loadChannel = NetChannel.numberedNet2One(1, new CodeLoadingChannelFilter.FilterRX())
+def loadChannel = NetChannel.numberedNet2One(1)
 def loadChannelLocation = loadChannel.getLocation()
 // make connection to host
 // could be passed in as an argument

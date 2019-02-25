@@ -43,8 +43,9 @@ class DataGenerator implements CSProcess {
         }        
       }
 
-      if (nodeAppended) { 
-        toNodes.write(new AvailableNodeList ( anl: agentVisitChannelList)) 
+      if (nodeAppended) {
+//        def anList = new AvailableNodeList ( anl: agentVisitChannelList)
+        toNodes.broadcastSeq(new AvailableNodeList ( anl: agentVisitChannelList))
       }
       def nNodes = toNodes.size()
       def nodeId = rng.nextInt(nNodes)
