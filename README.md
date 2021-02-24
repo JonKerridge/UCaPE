@@ -9,8 +9,10 @@ In order to use these source files you will need to put them into your IDE, whic
 will need Apache Groovy enabled( http://groovy-lang.org/download.html );
 and associate them with  the following libraries
 
-jcsp from https://github.com/JonKerridge/jcsp
+jcsp from https://github.com/CSPforJAVA/jcsp
 groovyJCSP from https://github.com/JonKerridge/groovyJCSP
+
+The build.gradle file assumes you have downloaded the required library binaries into you Maven Local repository
 
 you will also need to include junit.jar in the classpath
 

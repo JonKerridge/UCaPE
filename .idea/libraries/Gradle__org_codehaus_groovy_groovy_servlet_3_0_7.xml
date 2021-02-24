@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: org.codehaus.groovy:groovy-servlet:3.0.7">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-servlet/3.0.7/942e31ca03ad106af6cb0c785e1108cb1f2ed910/groovy-servlet-3.0.7.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-servlet/3.0.7/6c8c033156ee72562782a852d7df856d9e028f8c/groovy-servlet-3.0.7-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-servlet/3.0.7/33fe72e3a842f0f2370195735a22d8bcc7591552/groovy-servlet-3.0.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

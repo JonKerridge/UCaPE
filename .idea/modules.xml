@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/UCaPE.iml" filepath="$PROJECT_DIR$/.idea/modules/UCaPE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/UCaPE.main.iml" filepath="$PROJECT_DIR$/.idea/modules/UCaPE.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/UCaPE.test.iml" filepath="$PROJECT_DIR$/.idea/modules/UCaPE.test.iml" />
+    </modules>
+  </component>
+</project>

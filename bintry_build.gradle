@@ -1,0 +1,35 @@
+group 'UCaPE'
+version '1.0.2'
+
+apply plugin: 'groovy'
+apply plugin: 'java'
+
+// requires Java8
+// can be run using Groovy 2.4, 2.5, or 3.0
+
+repositories {
+    mavenCentral()
+    jcenter()
+    maven {
+        url "https://dl.bintray.com/jonkerridge/jcsp"
+    }
+    // following required for groovy-all
+    maven {
+        url "https://mvnrepository.com/artifact/org.codehaus.groovy/groovy-all"
+    }
+}
+
+dependencies {
+//    compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '2.4.18'
+//    compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '2.5.9'
+    compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '3.0.3'
+    compile 'cspforjava:jcsp:1.1.0'
+    compile 'groovyJCSP:groovyJCSP:1.1.3'
+    compile group: 'junit', name: 'junit', version: '4.12'
+//    compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '2.4.18'
+//    compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '2.5.9'
+    compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '3.0.3'
+    testCompile 'cspforjava:jcsp:1.1.0'
+    testCompile 'groovyJCSP:groovyJCSP:1.1.3'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
