@@ -19,12 +19,12 @@ allprojects {
 }
 
 dependencies {
-    compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '3.0.7'
-    compile 'cspforjava:jcsp:1.1.8'
-    compile 'groovyJCSP:groovyJCSP:1.1.8'
-    compile group: 'junit', name: 'junit', version: '4.13.1'
-    testCompile group: 'org.codehaus.groovy', name: 'groovy-all', version: '3.0.7'
-    testCompile 'cspforjava:jcsp:1.1.8'
-    testCompile 'groovyJCSP:groovyJCSP:1.1.8'
-    testCompile group: 'junit', name: 'junit', version: '4.13.1'
+    implementation group: 'org.codehaus.groovy', name: 'groovy-all', version: '3.0.7'
+    implementation 'cspforjava:jcsp:1.1.8'
+    implementation 'groovyJCSP:groovyJCSP:1.1.8'
+    implementation group: 'junit', name: 'junit', version: '4.13.1'
+    testImplementation group: 'org.codehaus.groovy', name: 'groovy-all', version: '3.0.7'
+    testImplementation 'cspforjava:jcsp:1.1.8'
+    testImplementation 'groovyJCSP:groovyJCSP:1.1.8'
+    testImplementation group: 'junit', name: 'junit', version: '4.13.1'
 }

@@ -12,9 +12,40 @@ and associate them with  the following libraries
 jcsp from https://github.com/CSPforJAVA/jcsp
 groovyJCSP from https://github.com/JonKerridge/groovyJCSP
 
-The build.gradle file assumes you have downloaded the required library binaries into you Maven Local repository
+The build.gradle file assumes you have downloaded the required library binaries into your
+Maven Local repository as follows:
 
-you will also need to include junit.jar in the classpath
+Download the ???-1.1.8-binaries.zip file and extract the contents to the directory
+
+%user_name%/.m2/repository/cspforjava/jcsp/1.1.8
+
+where %user_name% is the user's local directory for example in
+Windows 10 it is C:\Users\username
+in a unix system it is /user/username OR /home/username OR /users/username
+
+It is assumed that the required libraries have already been downloaded
+to the Local Maven repository as described above
+
+jcsp: https://github.com/CSPforJAVA/jcsp/releases/tag/1.1.8
+groovyJCSP: https://github.com/JonKerridge/groovyJCSP/releases/tag/1.1.8
+
+In order to use jcsp, groovyJCSP and Groovy the following will be required in the build.gradle file.
+
+repositories {
+...
+maven {
+url "https://mvnrepository.com/artifact/org.codehaus.groovy/groovy-all"
+}
+mavenLocal()
+}
+
+dependencies {
+implementation 'org.codehaus.groovy:groovy-all:3.0.7'
+implementation 'cspforjava:jcsp:1.1.8'
+implementation 'groovyJCSP:groovyJCSP:1.1.8'
+}
+
+You will also need to include junit.jar in the build dependencies
 
 You will need to ensure that the java and groovy versions of the libraries match
 with the versions you are using in your IDE.
