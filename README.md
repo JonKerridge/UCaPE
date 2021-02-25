@@ -2,15 +2,15 @@ The UCaPE repository contains the sources of all the examples and exercises
 used in the book "Using Concurrency and Parallelism Effectively parts i & ii"
 by Jon Kerridge published by Bookboon, free of charge.
 
-http://bookboon.com/en/using-concurrency-and-parallelism-effectively-i-ebook
-http://bookboon.com/en/using-concurrency-and-parallelism-effectively-ii-ebook
+http://bookboon.com/en/using-concurrency-and-parallelism-effectively-i-ebook  
+http://bookboon.com/en/using-concurrency-and-parallelism-effectively-ii-ebook  
 
 In order to use these source files you will need to put them into your IDE, which
 will need Apache Groovy enabled( http://groovy-lang.org/download.html );
 and associate them with  the following libraries
 
-jcsp from https://github.com/CSPforJAVA/jcsp
-groovyJCSP from https://github.com/JonKerridge/groovyJCSP
+jcsp from https://github.com/CSPforJAVA/jcsp  
+groovyJCSP from https://github.com/JonKerridge/groovyJCSP  
 
 The build.gradle file assumes you have downloaded the required library binaries into your
 Maven Local repository as follows:
@@ -30,25 +30,30 @@ jcsp: https://github.com/CSPforJAVA/jcsp/releases/tag/1.1.8
 groovyJCSP: https://github.com/JonKerridge/groovyJCSP/releases/tag/1.1.8
 
 In order to use jcsp, groovyJCSP and Groovy the following will be required in the build.gradle file.
-
+<pre>
 repositories {
-...
-maven {
-url "https://mvnrepository.com/artifact/org.codehaus.groovy/groovy-all"
-}
-mavenLocal()
+  mavenCentral()
+  maven {
+    url "https://mvnrepository.com/artifact/org.codehaus.groovy/groovy-all"
+  }
+  mavenLocal()
 }
 
 dependencies {
-implementation 'org.codehaus.groovy:groovy-all:3.0.7'
-implementation 'cspforjava:jcsp:1.1.8'
-implementation 'groovyJCSP:groovyJCSP:1.1.8'
+    implementation 'org.codehaus.groovy:groovy-all:3.0.7'
+    implementation 'cspforjava:jcsp:1.1.8'
+    implementation 'groovyJCSP:groovyJCSP:1.1.8'
+    implementation group: 'junit', name: 'junit', version: '4.13.1'
+    testImplementation group: 'org.codehaus.groovy', name: 'groovy-all', version: '3.0.7'
+    testImplementation 'cspforjava:jcsp:1.1.8'
+    testImplementation 'groovyJCSP:groovyJCSP:1.1.8'
+    testImplementation group: 'junit', name: 'junit', version: '4.13.1'
 }
-
-You will also need to include junit.jar in the build dependencies
+</pre>
+You will also need to include junit.jar in the build dependencies as shown.
 
 You will need to ensure that the java and groovy versions of the libraries match
-with the versions you are using in your IDE.
+with the versions you are using in your IDE Java 8 and Groovy 3.0.7+
 
 It should be noted that the exercises packages import code from the examples package
 and this will need to be maintained in your IDE.
