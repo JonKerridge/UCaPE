@@ -1,30 +1,29 @@
 apply plugin: 'groovy'
 apply plugin: 'java'
-apply plugin: 'idea'
 
-idea {
-    module {
-        downloadJavadoc = true
-    }
-}
-
-allprojects {
-    repositories {
-        mavenLocal()
-        mavenCentral()
-        maven {
-            url "https://mvnrepository.com/artifact/org.codehaus.groovy/groovy-all"
+repositories {
+//    mavenLocal()  // for local testing of dependencies
+    mavenCentral()
+    maven { // use this when downloading the library
+        name = "GitHubPackages"
+        url = "https://maven.pkg.github.com/CSPforJAVA/jcsp"
+        // must have read artifacts credentials with GitHub in order to download
+        // even though the repository is publicly accessible
+        credentials {
+            username = project.findProperty("gpr.user")
+            password = project.findProperty("gpr.key")
         }
     }
 }
 
+
 dependencies {
     implementation group: 'org.codehaus.groovy', name: 'groovy-all', version: '3.0.7'
-    implementation 'cspforjava:jcsp:1.1.8'
+    implementation 'cspforjava:jcsp:1.1.9'
     implementation 'groovyJCSP:groovyJCSP:1.1.8'
     implementation group: 'junit', name: 'junit', version: '4.13.1'
     testImplementation group: 'org.codehaus.groovy', name: 'groovy-all', version: '3.0.7'
-    testImplementation 'cspforjava:jcsp:1.1.8'
+    testImplementation 'cspforjava:jcsp:1.1.9'
     testImplementation 'groovyJCSP:groovyJCSP:1.1.8'
     testImplementation group: 'junit', name: 'junit', version: '4.13.1'
 }

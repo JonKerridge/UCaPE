@@ -8,8 +8,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Gradle: cspforjava:jcsp:1.1.8" level="project" />
-    <orderEntry type="library" name="Gradle: groovyJCSP:groovyJCSP:1.1.8" level="project" />
+    <orderEntry type="library" name="Gradle: cspforjava:jcsp:1.1.9" level="project" />
     <orderEntry type="library" name="Gradle: junit:junit:4.13.1" level="project" />
     <orderEntry type="library" name="Gradle: org.codehaus.groovy:groovy-test:3.0.7" level="project" />
     <orderEntry type="library" name="Gradle: org.codehaus.groovy:groovy-ant:3.0.7" level="project" />
@@ -38,6 +37,7 @@
     <orderEntry type="library" name="Gradle: com.github.javaparser:javaparser-core:3.17.0" level="project" />
     <orderEntry type="library" name="Gradle: org.junit.jupiter:junit-jupiter-api:5.7.0" level="project" />
     <orderEntry type="library" name="Gradle: org.opentest4j:opentest4j:1.2.0" level="project" />
+    <orderEntry type="library" name="Gradle: groovyJCSP:groovyJCSP:1.1.8" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.apache.ant:ant-junit:1.10.9" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.apache.ant:ant-launcher:1.10.9" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.apache.ant:ant-antlr:1.10.9" level="project" />

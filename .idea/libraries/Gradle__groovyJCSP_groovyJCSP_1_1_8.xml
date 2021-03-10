@@ -3,7 +3,9 @@
     <CLASSES>
       <root url="jar://$USER_HOME$/.m2/repository/groovyJCSP/groovyJCSP/1.1.8/groovyJCSP-1.1.8.jar!/" />
     </CLASSES>
-    <JAVADOC />
+    <JAVADOC>
+      <root url="file://$USER_HOME$/.m2/repository/groovyJCSP/groovyJCSP/1.1.8/groovyJCSP-1.1.8-javadoc.jar" />
+    </JAVADOC>
     <SOURCES />
   </library>
 </component>
