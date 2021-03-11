@@ -1,8 +1,8 @@
 package exercises.c5
  
 import jcsp.lang.*
-import groovyJCSP.*
-import groovyJCSP.plugAndPlay.* 
+import groovy_jcsp.*
+import groovy_jcsp.plugAndPlay.*
 import examples.c05.Controller
 import examples.c05.ScaledData
   

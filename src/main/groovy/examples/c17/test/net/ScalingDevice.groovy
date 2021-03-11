@@ -1,7 +1,7 @@
 package examples.c17.test.net
 
 import jcsp.lang.*
-import groovyJCSP.*
+import groovy_jcsp.*
 import examples.c05.*
 
 

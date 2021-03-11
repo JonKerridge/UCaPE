@@ -1,7 +1,7 @@
 package examples.c24.Distributed.loadedProcesses
 
 import examples.c24.Distributed.loaderObjects.*
-import groovyJCSP.*
+import groovy_jcsp.*
 import examples.c24.Distributed.processes.*
 
 class LoadedMerger implements WorkerInterface {

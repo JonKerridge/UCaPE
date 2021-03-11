@@ -2,7 +2,7 @@ package exercises.c4
 
 
 import jcsp.lang.*
-import groovyJCSP.*
+import groovy_jcsp.*
 
 class ResetSuccessor implements CSProcess {
 	  

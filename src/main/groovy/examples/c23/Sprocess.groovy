@@ -2,7 +2,7 @@ package examples.c23
 
 import examples.c23.loaderObjects.Sentinel;
 import examples.c23.loaderObjects.WorkerInterface
-import groovyJCSP.*
+import groovy_jcsp.*
 
 
 

@@ -1,7 +1,7 @@
 package examples.c24.SingleMachine.mainScript
 
 import jcsp.lang.*;
-import groovyJCSP.*;
+import groovy_jcsp.*;
 
 import examples.c24.SingleMachine.methods.defs;
 import examples.c24.SingleMachine.supportProcesses.*;

@@ -3,7 +3,7 @@ package examples.c19.net2.accessServer
 import jcsp.lang.*
 import java.awt.*
 import jcsp.awt.*
-import groovyJCSP.PAR
+import groovy_jcsp.PAR
 
 
 

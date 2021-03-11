@@ -2,8 +2,8 @@ package examples.c23.MontecarloPi
 
 import examples.c23.loaderObjects.WorkerInterface;
 
-import groovyJCSP.ChannelInputList;
-import groovyJCSP.ChannelOutputList;
+import groovy_jcsp.ChannelInputList;
+import groovy_jcsp.ChannelOutputList;
 
  
 

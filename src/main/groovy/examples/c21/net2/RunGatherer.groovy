@@ -2,7 +2,7 @@ package examples.c21.net2
 
 import jcsp.net2.*
 import jcsp.net2.tcpip.*
-import groovyJCSP.*
+import groovy_jcsp.*
 
 
 def nodeIP = "127.0.0.2"

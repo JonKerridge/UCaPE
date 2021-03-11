@@ -1,6 +1,6 @@
 package examples.c23.MontecarloPi
 
-import groovyJCSP.*
+import groovy_jcsp.*
 import jcsp.lang.*
 
 

@@ -3,7 +3,7 @@ package examples.c20.net;
 import jcsp.net.mobile.*
 import jcsp.net.*
 import jcsp.lang.*
-import groovyJCSP.*
+import groovy_jcsp.*
 
 class StopAgent implements MobileAgent {
   

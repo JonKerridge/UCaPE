@@ -4,7 +4,7 @@ package examples.c12.canteen
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 import jcsp.lang.*
-import groovyJCSP.* 
+import groovy_jcsp.*
 import jcsp.userIO.*
  
 def philosophers = Ask.Int ("Number of Philosophers (>1)? ", 2, 9)

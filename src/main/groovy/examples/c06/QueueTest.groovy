@@ -5,7 +5,7 @@ package examples.c06
 
 
 import jcsp.lang.*
-import groovyJCSP.*
+import groovy_jcsp.*
 
 import examples.c05.Queue
 class QueueTest extends GroovyTestCase {

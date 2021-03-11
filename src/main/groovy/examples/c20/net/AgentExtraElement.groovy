@@ -1,7 +1,7 @@
 package examples.c20.net
  
 import jcsp.lang.*
-import groovyJCSP.*
+import groovy_jcsp.*
 import jcsp.net.*
  
 class AgentExtraElement implements CSProcess { 

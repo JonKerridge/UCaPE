@@ -7,7 +7,7 @@ import jcsp.net2.tcpip.TCPIPNodeAddress
 import jcsp.net2.*
 import jcsp.net2.mobile.*
 import netObjects.*
-import groovyJCSP.*
+import groovy_jcsp.*
 import jcsp.lang.*
 
 class Emitter implements WorkerInterface  {

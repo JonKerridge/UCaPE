@@ -2,7 +2,7 @@ package examples.c21.net2
 
  
 import jcsp.lang.*
-import groovyJCSP.*
+import groovy_jcsp.*
 import jcsp.net2.*
 
 

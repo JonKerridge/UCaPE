@@ -1,10 +1,10 @@
 package examples.c17.test.net
 
-import groovyJCSP.*
+import groovy_jcsp.*
 import jcsp.net.*
 import jcsp.net.cns.*
 import jcsp.net.tcpip.*
-import groovyJCSP.util.*
+import groovy_jcsp.util.*
 
 
 class RunTestPart extends GroovyTestCase {

@@ -5,7 +5,7 @@ package examples.c12.fork
 
 
 import jcsp.lang.*
-import groovyJCSP.*
+import groovy_jcsp.*
 
 class Philosopher implements CSProcess {
   

@@ -7,7 +7,7 @@ import jcsp.net2.tcpip.TCPIPNodeAddress
 import jcsp.net2.*
 import jcsp.net2.mobile.*
 //import examples.23.*
-import groovyJCSP.*
+import groovy_jcsp.*
 import jcsp.lang.*
 import jcsp.userIO.*
 

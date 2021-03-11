@@ -4,7 +4,7 @@ package examples.c13
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 
-import groovyJCSP.*
+import groovy_jcsp.*
 
 
 class DataObject implements Serializable, JCSPCopy {

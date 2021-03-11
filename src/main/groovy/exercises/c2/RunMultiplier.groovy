@@ -1,7 +1,7 @@
 package exercises.c2
     
 import jcsp.lang.*
-import groovyJCSP.*
+import groovy_jcsp.*
 import examples.c02.Producer
      
 One2OneChannel connect1 = Channel.createOne2One()

@@ -1,7 +1,7 @@
 package examples.c15.net
 
 import jcsp.lang.*
-import groovyJCSP.*
+import groovy_jcsp.*
 
 class Get implements CSProcess {
   

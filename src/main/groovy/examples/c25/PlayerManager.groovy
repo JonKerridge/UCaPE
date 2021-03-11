@@ -1,7 +1,7 @@
 package examples.c25
 
 import jcsp.awt.*
-import groovyJCSP.*
+import groovy_jcsp.*
 import jcsp.lang.*
 import java.awt.*
 import java.awt.Color.*

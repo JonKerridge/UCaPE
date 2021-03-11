@@ -4,8 +4,8 @@ import jcsp.lang.*
 import jcsp.net.*
 import jcsp.net.tcpip.*
 import jcsp.net.cns.*
-import groovyJCSP.*
-import groovyJCSP.plugAndPlay.*
+import groovy_jcsp.*
+import groovy_jcsp.plugAndPlay.*
 
 class RingAgentElement implements CSProcess {
   

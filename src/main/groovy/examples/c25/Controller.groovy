@@ -3,7 +3,7 @@ package examples.c25
 import jcsp.awt.*
 import jcsp.lang.*
 import jcsp.util.*
-import groovyJCSP.*
+import groovy_jcsp.*
 
 class Controller implements CSProcess {
 	int maxPlayers = 5

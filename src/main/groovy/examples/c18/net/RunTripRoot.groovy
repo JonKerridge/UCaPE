@@ -4,7 +4,7 @@ import jcsp.lang.*
 import jcsp.net.*
 import jcsp.net.tcpip.*
 import jcsp.net.cns.*
-import groovyJCSP.*
+import groovy_jcsp.*
 import jcsp.userIO.*
 
 Node.getInstance().init(new TCPIPNodeFactory())

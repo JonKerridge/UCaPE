@@ -4,7 +4,7 @@ package examples.c18.net2
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 import jcsp.net2.*
 import jcsp.lang.*
-import groovyJCSP.*
+import groovy_jcsp.*
  
 class ForwardBackAgent implements MobileAgent {
   

@@ -5,7 +5,7 @@ package examples.c09
 
 
 import jcsp.lang.*
-import groovyJCSP.*
+import groovy_jcsp.*
 
 class EventPrompter implements CSProcess {  
 	

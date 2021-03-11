@@ -3,7 +3,7 @@ package examples.c18.net2
 // copyright 2012-18 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 import jcsp.lang.*
-import groovyJCSP.*
+import groovy_jcsp.*
 import jcsp.net2.*
 
 class BackRoot implements CSProcess{

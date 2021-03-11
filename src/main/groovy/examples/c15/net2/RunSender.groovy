@@ -1,6 +1,6 @@
 package examples.c15.net2
 
-import groovyJCSP.*
+import groovy_jcsp.*
 import jcsp.net2.*
 import jcsp.net2.tcpip.*
 import jcsp.userIO.*

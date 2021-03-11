@@ -5,7 +5,7 @@ import jcsp.net2.tcpip.TCPIPNodeAddress
 import jcsp.net2.*
 import jcsp.net2.mobile.*
 import jcsp.lang.*
-import groovyJCSP.*
+import groovy_jcsp.*
 
 def timer = new CSTimer()
 def startTime = timer.read()

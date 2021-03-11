@@ -3,7 +3,7 @@ package examples.c24.Distributed.processes
 import examples.c24.SingleMachine.methods.defs;
 
 import jcsp.lang.*;
-import groovyJCSP.*;
+import groovy_jcsp.*;
 
 
 

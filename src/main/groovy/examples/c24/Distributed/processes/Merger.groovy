@@ -1,7 +1,7 @@
 package examples.c24.Distributed.processes
 
 import examples.c24.Distributed.dataRecords.*
-import groovyJCSP.ChannelInputList;
+import groovy_jcsp.ChannelInputList;
 import jcsp.lang.*
 
 

@@ -4,7 +4,7 @@ import jcsp.net.*
 import jcsp.lang.*
 import jcsp.net.cns.*
 import jcsp.net.tcpip.*
-import groovyJCSP.*
+import groovy_jcsp.*
  
 class ForwardBackAgent implements MobileAgent {
   

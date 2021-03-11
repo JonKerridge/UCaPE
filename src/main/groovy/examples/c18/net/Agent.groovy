@@ -1,7 +1,7 @@
 package examples.c18.net
 
 import jcsp.lang.*
-import groovyJCSP.MobileAgent
+import groovy_jcsp.MobileAgent
 
 class Agent implements MobileAgent {
   

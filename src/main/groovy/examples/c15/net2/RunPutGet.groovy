@@ -5,7 +5,7 @@ package examples.c15.net2
 
 
 import jcsp.lang.*
-import groovyJCSP.*
+import groovy_jcsp.*
 
 def comms = Channel.one2one()
 

@@ -5,7 +5,7 @@ package examples.c02
 
 
 import jcsp.lang.*
-import groovyJCSP.*
+import groovy_jcsp.*
 
 def connect = Channel.one2one()
 

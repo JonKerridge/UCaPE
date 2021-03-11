@@ -4,7 +4,7 @@ package examples.c07
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 import jcsp.lang.*
-import groovyJCSP.*
+import groovy_jcsp.*
 
 
 def S02S1request = Channel.one2one()

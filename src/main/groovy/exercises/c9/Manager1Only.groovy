@@ -1,8 +1,8 @@
 package exercises.c9
 
 import jcsp.lang.*
-import groovyJCSP.*
-import groovyJCSP.plugAndPlay.*
+import groovy_jcsp.*
+import groovy_jcsp.plugAndPlay.*
 
 class Manager1Only implements CSProcess {
 	

@@ -1,7 +1,7 @@
 package exercises.c5
      
 import jcsp.lang.*
-import groovyJCSP.*
+import groovy_jcsp.*
 import examples.c05.ScaledData
    
 class Scale implements CSProcess {

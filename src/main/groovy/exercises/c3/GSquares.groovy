@@ -1,8 +1,8 @@
 package exercises.c3
 
-import groovyJCSP.plugAndPlay.*
+import groovy_jcsp.plugAndPlay.*
 import jcsp.lang.*
-import groovyJCSP.*
+import groovy_jcsp.*
 
 class GSquares implements CSProcess {
   

@@ -4,8 +4,8 @@ package examples.c12.canteen;
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 import jcsp.lang.*
-import groovyJCSP.*
-import groovyJCSP.plugAndPlay.*
+import groovy_jcsp.*
+import groovy_jcsp.plugAndPlay.*
 
 class Philosopher implements CSProcess{
 

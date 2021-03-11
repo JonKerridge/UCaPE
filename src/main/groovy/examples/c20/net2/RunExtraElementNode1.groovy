@@ -3,7 +3,7 @@ package examples.c20.net2
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 import jcsp.net2.*
 import jcsp.net2.tcpip.*
-import groovyJCSP.*
+import groovy_jcsp.*
 
 // must be run after the other elements have been run
 def rootIP = "127.0.0.1"

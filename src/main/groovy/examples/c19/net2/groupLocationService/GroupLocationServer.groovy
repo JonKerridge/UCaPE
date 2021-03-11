@@ -2,7 +2,7 @@ package examples.c19.net2.groupLocationService
 
 import jcsp.net2.*;
 import jcsp.net2.tcpip.*
-import groovyJCSP.*
+import groovy_jcsp.*
 //import examples.19.net2.netObjects
 
 

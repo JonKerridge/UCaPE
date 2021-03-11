@@ -4,7 +4,7 @@ import jcsp.lang.*
 
 import java.awt.*
 import jcsp.awt.*
-import groovyJCSP.PAR
+import groovy_jcsp.PAR
 
 
 class GLinterface implements CSProcess, Serializable {

@@ -1,7 +1,7 @@
 package examples.c23.MontecarloPi
 
 import jcsp.lang.*
-import groovyJCSP.*
+import groovy_jcsp.*
 
 class TestWorker implements CSProcess {
 	

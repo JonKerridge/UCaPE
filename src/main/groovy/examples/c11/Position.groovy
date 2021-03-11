@@ -5,7 +5,7 @@ package examples.c11
 
 
 
-import groovyJCSP.*
+import groovy_jcsp.*
 
 class Position implements JCSPCopy {
 	

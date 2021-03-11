@@ -4,7 +4,7 @@ package examples.c14
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 import jcsp.lang.*
-import groovyJCSP.*
+import groovy_jcsp.*
 
 
 class BarrierManager implements CSProcess{

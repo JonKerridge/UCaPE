@@ -4,7 +4,7 @@ import jcsp.lang.*;
 import jcsp.net2.*;
 import jcsp.net2.tcpip.*;
 import jcsp.net2.mobile.*;
-import groovyJCSP.*;
+import groovy_jcsp.*;
 import jcsp.userIO.*;
 
 

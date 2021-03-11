@@ -1,7 +1,7 @@
 package examples.c22.worker;
 
 import jcsp.lang.*;
-import groovyJCSP.*;
+import groovy_jcsp.*;
 
 import examples.c22.universalClasses.*
 

@@ -3,7 +3,7 @@ package examples.c18.net2
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 import jcsp.net2.*
 import jcsp.net2.tcpip.*
-import groovyJCSP.*
+import groovy_jcsp.*
 import jcsp.userIO.*
 
 //def int nodeId = Ask.Int ("Node identification (2..9)? ", 2, 9)

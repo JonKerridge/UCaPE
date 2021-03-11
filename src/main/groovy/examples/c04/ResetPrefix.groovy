@@ -5,7 +5,7 @@ package examples.c04
 
 
 import jcsp.lang.*
-import groovyJCSP.*
+import groovy_jcsp.*
 
 class ResetPrefix implements CSProcess {
   

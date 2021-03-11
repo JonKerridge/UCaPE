@@ -2,7 +2,7 @@ package examples.c20.net2
 
 import jcsp.net2.*
 import jcsp.net2.tcpip.*
-import groovyJCSP.*
+import groovy_jcsp.*
 
 def int nodeId = 5
 def int sentMessages = 500

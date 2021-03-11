@@ -1,6 +1,6 @@
 package examples.c25
 
-import groovyJCSP.*
+import groovy_jcsp.*
 import jcsp.lang.*
 
 class Matcher implements CSProcess {

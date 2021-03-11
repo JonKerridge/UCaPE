@@ -1,6 +1,6 @@
 package examples.c18.net
 
-import groovyJCSP.*
+import groovy_jcsp.*
 import jcsp.lang.*
 import jcsp.userIO.*
  

@@ -1,7 +1,7 @@
 package examples.c16.net
  
 import jcsp.lang.*
-import groovyJCSP.*
+import groovy_jcsp.*
 import jcsp.net.*
 import jcsp.net.cns.*
 

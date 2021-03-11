@@ -2,7 +2,7 @@ package exercises.c3
  
 import jcsp.lang.*
 import jcsp.plugNplay.ProcessRead
-import groovyJCSP.*
+import groovy_jcsp.*
 
 class Minus implements CSProcess {
   

@@ -1,8 +1,8 @@
 package exercises.c3
 
 import jcsp.lang.*
-import groovyJCSP.*
-import groovyJCSP.plugAndPlay.*
+import groovy_jcsp.*
+import groovy_jcsp.plugAndPlay.*
 
 One2OneChannel N2I = Channel.createOne2One()
 One2OneChannel I2D = Channel.createOne2One()

@@ -2,7 +2,7 @@ package examples.c17.test.net2
 
 // copyright 2012-18 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
-import groovyJCSP.*
+import groovy_jcsp.*
 import jcsp.net2.*
 import jcsp.net2.tcpip.*
 

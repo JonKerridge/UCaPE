@@ -1,7 +1,7 @@
 package examples.c20.net2
  
 import jcsp.lang.*
-import groovyJCSP.*
+import groovy_jcsp.*
 
 
 

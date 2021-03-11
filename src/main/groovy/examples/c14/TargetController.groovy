@@ -5,7 +5,7 @@ package examples.c14
 
 import jcsp.lang.*
 import jcsp.awt.*
-import groovyJCSP.*
+import groovy_jcsp.*
 
 class TargetController implements CSProcess {
 	

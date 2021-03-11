@@ -9,7 +9,7 @@ import jcsp.net2.*
 import jcsp.net2.mobile.*
 //import netObjects.*
 import jcsp.lang.*
-import groovyJCSP.*
+import groovy_jcsp.*
 import jcsp.userIO.*
 
 //def nodeAddr4 = Ask.Int( "what is the fourth part of the node's IP-address?  ", 2, 254)

@@ -51,5 +51,10 @@
       <option name="name" value="GitHubPackages" />
       <option name="url" value="https://maven.pkg.github.com/CSPforJAVA/jcsp" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="GitHubPackages2" />
+      <option name="name" value="GitHubPackages2" />
+      <option name="url" value="https://maven.pkg.github.com/JonKerridge/groovyJCSP" />
+    </remote-repository>
   </component>
 </project>

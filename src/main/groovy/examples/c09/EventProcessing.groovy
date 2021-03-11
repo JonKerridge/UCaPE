@@ -3,9 +3,9 @@ package examples.c09;
 // copyright 2012-18 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 import jcsp.lang.*
-import groovyJCSP.*
-import groovyJCSP.plugAndPlay.*
-import groovyJCSP.util.*
+import groovy_jcsp.*
+import groovy_jcsp.plugAndPlay.*
+import groovy_jcsp.util.*
 
 class EventProcessing implements CSProcess{ 
 	 

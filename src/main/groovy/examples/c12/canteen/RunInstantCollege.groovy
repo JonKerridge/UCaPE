@@ -5,7 +5,7 @@ package examples.c12.canteen
 
 
 import jcsp.lang.*
-import groovyJCSP.*
+import groovy_jcsp.*
  
 def service = Channel.any2one ()
 def deliver = Channel.one2any ()

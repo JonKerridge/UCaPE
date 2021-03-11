@@ -5,7 +5,7 @@ package examples.c14
 
 import jcsp.lang.*
 import java.awt.Point
-import groovyJCSP.*
+import groovy_jcsp.*
  
 class TargetProcess implements CSProcess {
 	

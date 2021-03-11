@@ -1,7 +1,7 @@
 package examples.c19.net2.UniversalClient
 
 import jcsp.lang.*
-import groovyJCSP.*
+import groovy_jcsp.*
 import jcsp.util.*
 
 

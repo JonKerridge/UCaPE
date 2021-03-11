@@ -1,8 +1,8 @@
 package exercises.c4
 
 import jcsp.lang.*
-import groovyJCSP.*
-import groovyJCSP.plugAndPlay.*
+import groovy_jcsp.*
+import groovy_jcsp.plugAndPlay.*
 import examples.c04.ResetUser
  
 One2OneChannel RU2RN = Channel.createOne2One()

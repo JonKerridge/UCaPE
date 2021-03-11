@@ -1,6 +1,6 @@
 package examples.c21.net2
 
-import groovyJCSP.*
+import groovy_jcsp.*
 
 def dataGenIP = "127.0.0.1"
 def gathererIP = "127.0.0.2"

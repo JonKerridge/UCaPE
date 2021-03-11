@@ -5,7 +5,7 @@ import jcsp.net2.*
 import jcsp.net2.mobile.*
 import examples.c24.Distributed.loadedProcesses.*
 import examples.c24.Distributed.loaderObjects.*
-import groovyJCSP.*
+import groovy_jcsp.*
 import jcsp.lang.*
 import jcsp.userIO.*
 

@@ -4,7 +4,7 @@ package examples.c17.sniff
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 import jcsp.lang.*
-import groovyJCSP.*
+import groovy_jcsp.*
  
 
 class SnifferComparator implements CSProcess {  

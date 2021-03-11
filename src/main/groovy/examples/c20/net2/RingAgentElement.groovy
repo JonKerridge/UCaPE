@@ -2,7 +2,7 @@ package examples.c20.net2
   
 import jcsp.lang.*
 import jcsp.net2.*
-import groovyJCSP.*
+import groovy_jcsp.*
 
 class RingAgentElement implements CSProcess {
   

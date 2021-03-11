@@ -5,7 +5,7 @@ package examples.c14
 
 
 import jcsp.lang.*
-import groovyJCSP.*
+import groovy_jcsp.*
 
 class TargetFlusher implements CSProcess {
 	

@@ -1,6 +1,6 @@
 package examples.c24.Distributed.processes
 
-import groovyJCSP.*
+import groovy_jcsp.*
 import jcsp.lang.*
 
 def nodes = 1

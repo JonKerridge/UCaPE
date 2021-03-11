@@ -1,8 +1,8 @@
 package exercises.c3
 
-import groovyJCSP.plugAndPlay.GPrint
+import groovy_jcsp.plugAndPlay.GPrint
 import jcsp.lang.*
-import groovyJCSP.*
+import groovy_jcsp.*
 
 One2OneChannel S2P = Channel.createOne2One()
 

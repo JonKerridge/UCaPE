@@ -1,7 +1,7 @@
 package examples.c23.MontecarloPi
 
 import jcsp.lang.*
-import groovyJCSP.*
+import groovy_jcsp.*
 
 def workers = 2
 def iterations = 19200000

@@ -1,7 +1,7 @@
 package examples.c18.net
 
 import jcsp.lang.*
-import groovyJCSP.*
+import groovy_jcsp.*
 
 class Root implements CSProcess{
   

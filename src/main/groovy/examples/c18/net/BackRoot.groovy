@@ -1,7 +1,7 @@
 package examples.c18.net
   
 import jcsp.lang.*
-import groovyJCSP.*
+import groovy_jcsp.*
 import jcsp.net.*
 import jcsp.net.cns.*
 import jcsp.net.tcpip.*

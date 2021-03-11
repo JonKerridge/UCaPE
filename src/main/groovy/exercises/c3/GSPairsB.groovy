@@ -1,8 +1,8 @@
 package exercises.c3
 
 import jcsp.lang.*
-import groovyJCSP.*
-import groovyJCSP.plugAndPlay.*
+import groovy_jcsp.*
+import groovy_jcsp.plugAndPlay.*
 
 class GSPairsB implements CSProcess {
   

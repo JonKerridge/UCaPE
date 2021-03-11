@@ -2,7 +2,7 @@ package examples.c19.net2.accessServer
 
 import jcsp.lang.*
 import jcsp.util.*
-import groovyJCSP.*
+import groovy_jcsp.*
 import jcsp.net2.*
 
 

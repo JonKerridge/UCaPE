@@ -5,7 +5,7 @@ package examples.c05
 
 
 import jcsp.lang.*
-import groovyJCSP.*
+import groovy_jcsp.*
 
 class Scale implements CSProcess {
 	

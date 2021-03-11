@@ -4,7 +4,7 @@ import java.awt.*
 import jcsp.awt.*
 import jcsp.lang.*
 import jcsp.util.*
-import groovyJCSP.*
+import groovy_jcsp.*
 
 class PlayerInterface implements CSProcess{
 	ActiveCanvas gameCanvas

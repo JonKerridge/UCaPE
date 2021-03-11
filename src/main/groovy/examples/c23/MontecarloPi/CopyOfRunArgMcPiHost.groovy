@@ -4,7 +4,7 @@ import examples.c23.loaderObjects.*
 import jcsp.net2.tcpip.TCPIPNodeAddress
 import jcsp.net2.*
 import jcsp.net2.mobile.*
-import groovyJCSP.*
+import groovy_jcsp.*
 import jcsp.lang.*
 
 def workers = new Integer(args[0]).intValue()

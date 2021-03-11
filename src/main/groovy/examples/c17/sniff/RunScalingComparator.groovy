@@ -5,7 +5,7 @@ package examples.c17.sniff
 
 
 import jcsp.lang.*
-import groovyJCSP.*
+import groovy_jcsp.*
 
 def Copy2Sniff = Channel.one2one()
 def Out2Comp = Channel.one2one()

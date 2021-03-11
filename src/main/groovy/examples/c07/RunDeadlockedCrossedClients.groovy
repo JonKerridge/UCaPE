@@ -5,7 +5,7 @@ package examples.c07
 
 
 import jcsp.lang.*
-import groovyJCSP.*
+import groovy_jcsp.*
 
 def S02S1request = Channel.one2one()
 def S12S0send = Channel.one2one()

@@ -4,8 +4,8 @@ package examples.c09
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 import jcsp.lang.*
-import groovyJCSP.*
-import groovyJCSP.plugAndPlay.*
+import groovy_jcsp.*
+import groovy_jcsp.plugAndPlay.*
 
 def eg2h = Channel.one2one()
 def h2udd = Channel.one2one()

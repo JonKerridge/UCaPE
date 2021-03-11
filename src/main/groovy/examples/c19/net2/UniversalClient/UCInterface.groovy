@@ -2,7 +2,7 @@ package examples.c19.net2.UniversalClient
 
 import java.awt.*
 import jcsp.awt.*
-import groovyJCSP.PAR
+import groovy_jcsp.PAR
 import jcsp.lang.*
 
 

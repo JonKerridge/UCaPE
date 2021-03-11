@@ -2,11 +2,11 @@ package examples.c15.net2
 // copyright 2012-18 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 import jcsp.lang.*
-import groovyJCSP.*
+import groovy_jcsp.*
 import jcsp.net2.*
 import jcsp.net2.tcpip.*
 import jcsp.userIO.*
-import groovyJCSP.plugAndPlay.*
+import groovy_jcsp.plugAndPlay.*
 import examples.c13.Write
 
 def dbIp = "127.0.0.1"

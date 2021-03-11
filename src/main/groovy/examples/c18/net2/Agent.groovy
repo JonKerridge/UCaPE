@@ -4,7 +4,7 @@ package examples.c18.net2
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 import jcsp.lang.*
-import groovyJCSP.MobileAgent
+import groovy_jcsp.MobileAgent
 
 
 class Agent implements MobileAgent {  

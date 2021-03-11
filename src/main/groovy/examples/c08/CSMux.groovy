@@ -4,7 +4,7 @@ package examples.c08
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 
-import groovyJCSP.*
+import groovy_jcsp.*
 import jcsp.lang.*
 
 class CSMux implements CSProcess {

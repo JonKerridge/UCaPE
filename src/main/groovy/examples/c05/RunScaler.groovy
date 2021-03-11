@@ -3,8 +3,8 @@ package examples.c05
 // copyright 2012-18 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 import jcsp.lang.*
-import groovyJCSP.*
-import groovyJCSP.plugAndPlay.*
+import groovy_jcsp.*
+import groovy_jcsp.plugAndPlay.*
 
 
 def data = Channel.one2one()
