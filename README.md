@@ -7,53 +7,53 @@ http://bookboon.com/en/using-concurrency-and-parallelism-effectively-ii-ebook
 
 In order to use these source files you will need to put them into your IDE, which
 will need Apache Groovy enabled( http://groovy-lang.org/download.html );
-and associate them with  the following libraries
+and associate them with  the following libraries, which are available as Github Packages
 
 jcsp from https://github.com/CSPforJAVA/jcsp  
 groovyJCSP from https://github.com/JonKerridge/groovyJCSP  
 
-The build.gradle file assumes you have downloaded the required library binaries into your
-Maven Local repository as follows:
-
-Download the ???-1.1.8-binaries.zip file and extract the contents to the directory
-
-%user_name%/.m2/repository/cspforjava/jcsp/1.1.8
-
-where %user_name% is the user's local directory for example in
-Windows 10 it is C:\Users\username
-in a unix system it is /user/username OR /home/username OR /users/username
-
-It is assumed that the required libraries have already been downloaded
-to the Local Maven repository as described above
-
-jcsp: https://github.com/CSPforJAVA/jcsp/releases/tag/1.1.8
-groovyJCSP: https://github.com/JonKerridge/groovyJCSP/releases/tag/1.1.8
-
-In order to use jcsp, groovyJCSP and Groovy the following will be required in the build.gradle file.
+In order to use jcsp, groovyJCSP and Groovy the following will be required in the 
+build.gradle file.
 <pre>
 repositories {
-  mavenCentral()
-  maven {
-    url "https://mvnrepository.com/artifact/org.codehaus.groovy/groovy-all"
-  }
-  mavenLocal()
+    mavenCentral()
+    maven { // to download the CSPforJAVA.jcsp library
+        name = "GitHubPackages"
+        url = "https://maven.pkg.github.com/CSPforJAVA/jcsp"
+        // must have read artifacts credentials with GitHub in order to download
+        // even though the repository is publicly accessible
+        credentials {
+            username = project.findProperty("gpr.user")
+            password = project.findProperty("gpr.key")
+        }
+    }
+    maven { // to download the jonkerridge.groovy_jcsp library
+        name = "GitHubPackages"
+        url = "https://maven.pkg.github.com/JonKerridge/groovyJCSP"
+        // must have read artifacts credentials with GitHub in order to download
+        // even though the repository is publicly accessible
+        credentials {
+            username = project.findProperty("gpr.user")
+            password = project.findProperty("gpr.key")
+        }
+    }
 }
 
 dependencies {
     implementation 'org.codehaus.groovy:groovy-all:3.0.7'
-    implementation 'cspforjava:jcsp:1.1.8'
-    implementation 'groovyJCSP:groovyJCSP:1.1.8'
+    implementation 'cspforjava:jcsp:1.1.9'
+    implementation 'jonkerridge:groovyJCSP:1.1.9'
     implementation group: 'junit', name: 'junit', version: '4.13.1'
     testImplementation group: 'org.codehaus.groovy', name: 'groovy-all', version: '3.0.7'
-    testImplementation 'cspforjava:jcsp:1.1.8'
-    testImplementation 'groovyJCSP:groovyJCSP:1.1.8'
+    testImplementation 'cspforjava:jcsp:1.1.9'
+    testImplementation 'jonkerridge:groovyJCSP:1.1.9'
     testImplementation group: 'junit', name: 'junit', version: '4.13.1'
 }
 </pre>
 You will also need to include junit.jar in the build dependencies as shown.
 
 You will need to ensure that the java and groovy versions of the libraries match
-with the versions you are using in your IDE Java 8 and Groovy 3.0.7+
+with the versions you are using in your IDE are Java 8+ and Groovy 3.0.7+
 
 It should be noted that the exercises packages import code from the examples package
 and this will need to be maintained in your IDE.
