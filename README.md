@@ -20,8 +20,6 @@ repositories {
     maven { // to download the CSPforJAVA.jcsp library
         name = "GitHubPackages"
         url = "https://maven.pkg.github.com/CSPforJAVA/jcsp"
-        // must have read artifacts credentials with GitHub in order to download
-        // even though the repository is publicly accessible
         credentials {
             username = project.findProperty("gpr.user")
             password = project.findProperty("gpr.key")
@@ -30,8 +28,6 @@ repositories {
     maven { // to download the jonkerridge.groovy_jcsp library
         name = "GitHubPackages"
         url = "https://maven.pkg.github.com/JonKerridge/groovyJCSP"
-        // must have read artifacts credentials with GitHub in order to download
-        // even though the repository is publicly accessible
         credentials {
             username = project.findProperty("gpr.user")
             password = project.findProperty("gpr.key")
@@ -51,6 +47,18 @@ dependencies {
 }
 </pre>
 You will also need to include junit.jar in the build dependencies as shown.
+
+**Please note**
+
+In order to download Github Packages a user requires to have a Github Personal Access Token.  
+See https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token
+
+A gradle.properties file is required at the same directory level as the build.gradle file that contains
+
+<pre>
+gpr.user=userName
+gpr.key=userPersonalAccessToken
+</pre>
 
 You will need to ensure that the java and groovy versions of the libraries match
 with the versions you are using in your IDE are Java 8+ and Groovy 3.0.7+

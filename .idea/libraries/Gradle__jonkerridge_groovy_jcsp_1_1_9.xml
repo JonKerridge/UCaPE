@@ -2,6 +2,7 @@
   <library name="Gradle: jonkerridge:groovy_jcsp:1.1.9">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/jonkerridge/groovy_jcsp/1.1.9/ba5225df44d4c4cdb4043877de4ea85ef55a67dc/groovy_jcsp-1.1.9.jar!/" />
+      <root url="jar://$USER_HOME$/.m2/repository/jonkerridge/groovy_jcsp/1.1.9/groovy_jcsp-1.1.9.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
