@@ -1,6 +1,6 @@
 package examples.c18.net2
 
-// copyright 2012-18 Jon Kerridge
+// copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 
@@ -9,18 +9,18 @@ import jcsp.lang.*
 
 class ProcessNode implements CSProcess{
   
-  def ChannelInput inChannel
-  def ChannelOutput outChannel
-  def int nodeId   
+  ChannelInput inChannel
+  ChannelOutput outChannel
+  int nodeId
 
   void run() {
     def N2A = Channel.one2one()
     def A2N = Channel.one2one()  
-    def ChannelInput toAgentInEnd = N2A.in()
-    def ChannelInput fromAgentInEnd = A2N.in()
-    def ChannelOutput toAgentOutEnd = N2A.out()
-    def ChannelOutput fromAgentOutEnd = A2N.out()
-    def int localValue = nodeId 
+    ChannelInput toAgentInEnd = N2A.in()
+    ChannelInput fromAgentInEnd = A2N.in()
+    ChannelOutput toAgentOutEnd = N2A.out()
+    ChannelOutput fromAgentOutEnd = A2N.out()
+    int localValue = nodeId
 	
     while (true) {
       def theAgent = inChannel.read()

@@ -1,6 +1,6 @@
 package examples.c07
 
-// copyright 2012-18 Jon Kerridge
+// copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 import jcsp.lang.*
@@ -9,12 +9,12 @@ import groovy_jcsp.*
 
 class Server implements CSProcess{
 	  
-  def ChannelInput clientRequest
-  def ChannelOutput clientSend  
-  def ChannelOutput thisServerRequest
-  def ChannelInput thisServerReceive  
-  def ChannelInput otherServerRequest
-  def ChannelOutput otherServerSend  
+  ChannelInput clientRequest
+  ChannelOutput clientSend
+  ChannelOutput thisServerRequest
+  ChannelInput thisServerReceive
+  ChannelInput otherServerRequest
+  ChannelOutput otherServerSend
   def dataMap = [ : ]    
                 
   void run () {

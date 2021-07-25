@@ -8,18 +8,18 @@ import jcsp.net.tcpip.*
 
 class TripRoot implements CSProcess{
   
-  def ChannelInput fromNodes
+  ChannelInput fromNodes
   def String initialValue
-  def int nodes
+  int nodes
   
   void run() {
     
-    def One2OneChannel N2A = Channel.createOne2One()
-    def One2OneChannel A2N = Channel.createOne2One()  
-    def ChannelInput toAgentInEnd = N2A.in()
-    def ChannelInput fromAgentInEnd = A2N.in()
-    def ChannelOutput toAgentOutEnd = N2A.out()
-    def ChannelOutput fromAgentOutEnd = A2N.out()
+    def N2A = Channel.one2one()
+    def A2N = Channel.one2one()  
+    ChannelInput toAgentInEnd = N2A.in()
+    ChannelInput fromAgentInEnd = A2N.in()
+    ChannelOutput toAgentOutEnd = N2A.out()
+    ChannelOutput fromAgentOutEnd = A2N.out()
     
     def tripList = [ fromNodes.getChannelLocation() ]
                      

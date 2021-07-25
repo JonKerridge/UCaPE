@@ -1,6 +1,6 @@
 package examples.c12.fork
 
-// copyright 2012-18 Jon Kerridge
+// copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 
@@ -9,8 +9,8 @@ import groovy_jcsp.*
 
 class Butler implements CSProcess {
   
-  def ChannelInputList enters
-  def ChannelInputList exits
+  ChannelInputList enters
+  ChannelInputList exits
   
   void run() {
     def seats = enters.size()
@@ -26,7 +26,7 @@ class Butler implements CSProcess {
     while (true) {
       def spaces = seated < ( seats - 1 )
       def usedAlt = spaces ? eitherAlt : exitAlt
-      def i = usedAlt.select()
+      int i = usedAlt.select()
       allChans[i].read()
       def exiting = i < seats
       seated = exiting ? seated - 1 : seated + 1

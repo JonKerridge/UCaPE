@@ -49,7 +49,7 @@ class defs {
     def static sequencer (N, baseList, outList){
         def seqLength = baseList.size()
         for (gl in 0..seqLength-N) {
-            def int partSum = 0
+            int partSum = 0
             for ( i in 0..< N) partSum = partSum + baseList[gl + i]
             outList << partSum
         }       
@@ -60,7 +60,7 @@ class defs {
         def limit = seqLength - N
         if (lastBlock) limit = limit + (N - n)
         for (gl in 0..limit) {
-            def int partSum = 0
+            int partSum = 0
             if ( n == 1) partSum = baseList[gl]
             else for ( i in 0..< n) partSum = partSum + baseList[gl + i]
             outList << partSum

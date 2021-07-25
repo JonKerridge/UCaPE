@@ -1,6 +1,6 @@
 package examples.c14
 
-// copyright 2012-18 Jon Kerridge
+// copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 import jcsp.lang.*
@@ -9,15 +9,15 @@ import groovy_jcsp.*
 
 class TargetController implements CSProcess {
 	
-  def ChannelOutput getActiveTargets
-  def ChannelInput activatedTargets  
-  def ChannelInput receivePoint  
-  def ChannelOutputList sendPoint
+  ChannelOutput getActiveTargets
+  ChannelInput activatedTargets
+  ChannelInput receivePoint
+  ChannelOutputList sendPoint
   
   def Barrier setUpBarrier
   def Barrier goBarrier
   def AltingBarrier timeAndHitBarrier  
-  def int targets = 16
+  int targets = 16
 
    void run() {
      def POINT = 1
@@ -29,7 +29,7 @@ class TargetController implements CSProcess {
        getActiveTargets.write(1)
        def activeTargets = activatedTargets.read()  // a non-zero list of activated targets
        def runningTargets = activeTargets.size      // greater than zero
-       def ChannelOutputList sendList = []
+       ChannelOutputList sendList = []
        for ( t in activeTargets) sendList.append(sendPoint[t])
        def active = true
        goBarrier.sync()  

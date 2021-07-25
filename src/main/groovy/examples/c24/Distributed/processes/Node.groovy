@@ -9,8 +9,8 @@ import jcsp.lang.*
 
 class Node implements CSProcess {
   
-  def ChannelInput nodeInChannel
-  def ChannelOutputList toMergers // N of these
+  ChannelInput nodeInChannel
+  ChannelOutputList toMergers // N of these
   def N = 0
   def sourceList
   def runs

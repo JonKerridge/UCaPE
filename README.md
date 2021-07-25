@@ -75,7 +75,7 @@ navigate from examples> src> c02> RunHelloWorld.groovy, which is a runnable scri
 Use the IDE to run the script and 'Hello World!' should appear in the console.
 
 In Chapters 15 onwards, contained in part ii of the book, examples of the use of 
-networked systems is presented.  Some of these chapter contain tweo packages one 
+networked systems is presented.  Some of these chapter contain two packages one 
 labelled net and the other called net2.  The net2 packages are the ones described 
 in the book and require no further intervention except to run the main Groovy scripts
 as described in the text.
@@ -86,5 +86,5 @@ which came from an earlier version of the books, which was not actually publishe
 This was because the net2 became available and has more functionality, especially 
 where mobility of processes was concerned.
 
-The CNS-Server is found in jcsp.net.tcpip.TCPIPCNSServer within the jcsp-v.m.p.jar
+The CNS-Server is found in jcsp.net.tcpip.TCPIPCNSServer within the jcsp-?.?.?.jar
 library and can be run directly from the library in your IDE.

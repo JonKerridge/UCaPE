@@ -6,12 +6,12 @@ import groovy_jcsp.*
 
 class GSquares implements CSProcess {
   
-  def ChannelOutput outChannel
+  ChannelOutput outChannel
   
   void run () {
 
-    One2OneChannel N2I = Channel.createOne2One()
-    One2OneChannel I2P = Channel.createOne2One()
+    One2OneChannel N2I = Channel.one2one()
+    One2OneChannel I2P = Channel.one2one()
 
     def testList =  [ new GNumbers   ( outChannel: N2I.out() ),
                       new GIntegrate ( inChannel: N2I.in(), 

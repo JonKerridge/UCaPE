@@ -4,7 +4,7 @@ import groovy_jcsp.plugAndPlay.GPrint
 import jcsp.lang.*
 import groovy_jcsp.*
 
-One2OneChannel S2P = Channel.createOne2One()
+One2OneChannel S2P = Channel.one2one()
 
 def testList = [ new GSquares ( outChannel: S2P.out() ),
                  new GPrint   ( inChannel: S2P.in(),

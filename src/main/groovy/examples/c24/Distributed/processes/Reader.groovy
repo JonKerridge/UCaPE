@@ -9,7 +9,7 @@ import examples.c24.SingleMachine.methods.*
 
 class Reader implements CSProcess {
   
-  def ChannelOutputList outChannels
+  ChannelOutputList outChannels
   def inRoot = "C:\\Concordance\\SourceFiles\\"
   def N = 6
   def blockLength = 5000
@@ -24,8 +24,8 @@ class Reader implements CSProcess {
     if (timeHandle.exists()) timeHandle.delete()
     def timeWriter = timeHandle.newPrintWriter()
     def timer = new CSTimer()
-    def int nodes = outChannels.size()
-    def int blockStride = blockLength - N + 1
+    int nodes = outChannels.size()
+    int blockStride = blockLength - N + 1
     for (source in sourceList){
       def fileName = inRoot + source + ".txt"
       println "READER - Processing: $fileName, N: $N," + 
@@ -39,7 +39,7 @@ class Reader implements CSProcess {
         def fileReader = new FileReader(fileHandle)
         def globalIndex = 0
         def localIndex = 0
-        def int currentNode = 0
+        int currentNode = 0
         def firstWrite = true
         def beginTime
         fileReader.eachLine { line ->

@@ -1,6 +1,6 @@
 package examples.c04
 
-// copyright 2012-18 Jon Kerridge
+// copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 import jcsp.lang.*
@@ -9,9 +9,9 @@ import groovy_jcsp.plugAndPlay.*
 
 class ResetNumbers implements CSProcess {
   
-  def ChannelOutput outChannel
-  def ChannelInput resetChannel
-  def int initialValue = 0
+  ChannelOutput outChannel
+  ChannelInput resetChannel
+  int initialValue = 0
   
   void run() {
     

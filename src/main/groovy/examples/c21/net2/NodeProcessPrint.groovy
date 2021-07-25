@@ -8,8 +8,8 @@ import jcsp.net2.tcpip.*
 
 
 class NodeProcessPrint implements CSProcess {
-  def int nodeId		
-  def int nodeIPFinalPart  // forms last part of IP address
+  int nodeId
+  int nodeIPFinalPart  // forms last part of IP address
   def String toGathererIP
   def String toDataGenIP
   def processList = null
@@ -100,7 +100,7 @@ class NodeProcessPrint implements CSProcess {
             def dType = d.getClass().getName()
             //println "NP-$nodeId: data of type $dType being processed"
             if ( typeOrder.contains(dType) ) {
-              def i = 0
+              int i = 0
               def notFound = true
               while (notFound) {
                 if (typeOrder[i] == dType) {
@@ -145,7 +145,7 @@ class NodeProcessPrint implements CSProcess {
           def typeRequired = NodeFromVisitingAgent.in().read()
           //println "NP-$nodeId: visiting agent wants $typeRequired"
           if ( vanillaOrder.contains(typeRequired) ) {
-            def i = 0
+            int i = 0
             def notFound = true
             while (notFound) {
               if (vanillaOrder[i] == typeRequired) {

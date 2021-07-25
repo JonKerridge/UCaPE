@@ -5,11 +5,11 @@ import groovy_jcsp.*
 import groovy_jcsp.plugAndPlay.*
 import examples.c04.ResetUser
  
-One2OneChannel RU2RN = Channel.createOne2One()
+One2OneChannel RU2RN = Channel.one2one()
 
-One2OneChannel RN2Conv = Channel.createOne2One()
-One2OneChannel Conv2FD = Channel.createOne2One()
-One2OneChannel FD2GC = Channel.createOne2One()
+One2OneChannel RN2Conv = Channel.one2one()
+One2OneChannel Conv2FD = Channel.one2one()
+One2OneChannel FD2GC = Channel.one2one()
 
 def RNprocList = [ new ResetNumbers ( resetChannel: RU2RN.in(), 
             						  initialValue: 1000,
@@ -23,10 +23,10 @@ def RNprocList = [ new ResetNumbers ( resetChannel: RU2RN.in(),
             					  frameLabel: "Reset Numbers Console"  )
                ]	
 
-def One2OneChannel RU2GC = Channel.createOne2One()
-def One2OneChannel GC2Conv = Channel.createOne2One()
-def One2OneChannel Conv2RU = Channel.createOne2One()
-def One2OneChannel  RU2GCClear= Channel.createOne2One()
+def RU2GC = Channel.one2one()
+def GC2Conv = Channel.one2one()
+def Conv2RU = Channel.one2one()
+def  RU2GCClear= Channel.one2one()
 
 def RUprocList = [ new ResetUser ( resetValue: RU2RN.out(),
 					               toConsole: RU2GC.out(),

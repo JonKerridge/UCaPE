@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="Gradle: cspforjava:jcsp:1.1.9">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.m2/repository/cspforjava/jcsp/1.1.9/jcsp-1.1.9.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cspforjava/jcsp/1.1.9/9ee763c9cb978adb729fc211283878ac0fafa21f/jcsp-1.1.9.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

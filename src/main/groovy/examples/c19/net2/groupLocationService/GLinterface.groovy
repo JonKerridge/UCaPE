@@ -9,10 +9,10 @@ import groovy_jcsp.PAR
 
 class GLinterface implements CSProcess, Serializable {
 	
-	def ChannelOutput nameChannel
-	def ChannelOutput locationChannel
-	def ChannelInput label1Config
-	def ChannelInput label2Config
+	ChannelOutput nameChannel
+	ChannelOutput locationChannel
+	ChannelInput label1Config
+	ChannelInput label2Config
 	
 	void run(){
 		def root = new ActiveClosingFrame ("Group Location Finder")

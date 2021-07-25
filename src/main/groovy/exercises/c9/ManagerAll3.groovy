@@ -6,9 +6,9 @@ import groovy_jcsp.plugAndPlay.*
 
 class ManagerAll3 implements CSProcess {
 	
-	def ChannelInputList inputs
-	def ChannelOutputList outputs
-	def int hoppers = 3
+	ChannelInputList inputs
+	ChannelOutputList outputs
+	int hoppers = 3
 
 	void run(){
 		while (true) {

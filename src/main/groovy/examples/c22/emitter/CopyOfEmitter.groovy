@@ -44,7 +44,7 @@ class CopyOfEmitter implements CSProcess {
 			netLocations.put (initLoc.id, initLoc.channelAddress)
 		}
 		println "Emitter: Workers have registered"
-		def channelLoc = -1
+		ChannelLoc = -1
 		for ( i in 0 ..< workers) {
 			channelLoc = netLocations.get (i)
 			toWorkers[channelLoc].write(new Signal())

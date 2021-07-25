@@ -1,14 +1,14 @@
 package examples.c16.net2
- // copyright 2012-18 Jon Kerridge
+ // copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 import jcsp.lang.*
 import jcsp.net2.*
 
 class PrintUser implements CSProcess {
 	
-  def ChannelOutput printerRequest
-  def ChannelOutput printerRelease
-  def int userId  
+  ChannelOutput printerRequest
+  ChannelOutput printerRelease
+  int userId
   
   void run() {	  
     def printList = [ "line 1 for user " + userId, 

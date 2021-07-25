@@ -6,11 +6,11 @@ import jcsp.lang.ChannelOutput
 
 class Blender implements CSProcess {
 
-	def ChannelInput fromConsole
-	def ChannelOutput toConsole
-	def ChannelOutput clearConsole
-	def ChannelOutput toManager
-	def ChannelInput fromManager	
+	ChannelInput fromConsole
+	ChannelOutput toConsole
+	ChannelOutput clearConsole
+	ChannelOutput toManager
+	ChannelInput fromManager
 	
 	void run(){
 		while (true) {

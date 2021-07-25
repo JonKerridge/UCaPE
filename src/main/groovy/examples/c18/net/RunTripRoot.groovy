@@ -10,7 +10,7 @@ import jcsp.userIO.*
 Node.getInstance().init(new TCPIPNodeFactory())
 
 def String initialValue = Ask.string ( "Initial List Value ? ")
-def int nodes = Ask.Int ("Number of nodes? ", 1, 9)
+int nodes = Ask.Int ("Number of nodes? ", 1, 9)
 
 def fromNodes = CNS.createNet2One("toRoot")
 

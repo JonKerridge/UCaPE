@@ -8,7 +8,7 @@ import jcsp.lang.*
 
 
 class Gatherer implements CSProcess{
-  def ChannelInput fromNodes
+  ChannelInput fromNodes
 
   void run() {
     while (true) {

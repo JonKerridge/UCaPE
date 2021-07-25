@@ -7,6 +7,6 @@ import jcsp.net.cns.*
 
 class PrintJob  implements Serializable{
 
-  def int userId
+  int userId
   def NetChannelLocation useLocation
 }

@@ -4,19 +4,19 @@ import jcsp.lang.*
 
 class ProcessNode implements CSProcess{
   
-  def ChannelInput inChannel
-  def ChannelOutput outChannel
-  def int nodeId 
+  ChannelInput inChannel
+  ChannelOutput outChannel
+  int nodeId 
   
-  def One2OneChannel N2A = Channel.createOne2One()
-  def One2OneChannel A2N = Channel.createOne2One()  
+  def N2A = Channel.one2one()
+  def A2N = Channel.one2one()  
 
   void run() {
-    def ChannelInput toAgentInEnd = N2A.in()
-    def ChannelInput fromAgentInEnd = A2N.in()
-    def ChannelOutput toAgentOutEnd = N2A.out()
-    def ChannelOutput fromAgentOutEnd = A2N.out()
-    def int localValue = nodeId 
+    ChannelInput toAgentInEnd = N2A.in()
+    ChannelInput fromAgentInEnd = A2N.in()
+    ChannelOutput toAgentOutEnd = N2A.out()
+    ChannelOutput fromAgentOutEnd = A2N.out()
+    int localValue = nodeId 
     while (true) {
       def theAgent = inChannel.read()
       theAgent.connect ( [fromAgentOutEnd, toAgentInEnd] )

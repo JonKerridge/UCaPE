@@ -1,6 +1,6 @@
 package examples.c17.counted
 
-// copyright 2012-18 Jon Kerridge
+// copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 import groovy_jcsp.*
@@ -9,10 +9,10 @@ import jcsp.lang.*
 
 class CountedSamplingTimer implements CSProcess {
 	
-  def ChannelOutput sampleRequest
+  ChannelOutput sampleRequest
   def sampleInterval
-  def ChannelInput countReturn
-  def ChannelOutput countToGatherer 
+  ChannelInput countReturn
+  ChannelOutput countToGatherer
    
   void run() {
     def timer = new CSTimer()

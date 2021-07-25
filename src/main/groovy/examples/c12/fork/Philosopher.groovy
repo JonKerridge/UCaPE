@@ -1,6 +1,6 @@
 package examples.c12.fork
 
-// copyright 2012-18 Jon Kerridge
+// copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 
@@ -9,11 +9,11 @@ import groovy_jcsp.*
 
 class Philosopher implements CSProcess {
   
-  def ChannelOutput leftFork
-  def ChannelOutput rightFork
-  def ChannelOutput enter
-  def ChannelOutput exit
-  def int id
+  ChannelOutput leftFork
+  ChannelOutput rightFork
+  ChannelOutput enter
+  ChannelOutput exit
+  int id
   
   def timer = new CSTimer()
   

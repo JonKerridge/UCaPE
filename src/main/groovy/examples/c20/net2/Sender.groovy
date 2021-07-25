@@ -4,10 +4,10 @@ import jcsp.lang.*
 
 class Sender implements CSProcess {
 	
-  def ChannelOutput toElement
-  def int element
-  def int nodes
-  def int iterations
+  ChannelOutput toElement
+  int element
+  int nodes
+  int iterations
   
   def void run() {
     def timer = new CSTimer()

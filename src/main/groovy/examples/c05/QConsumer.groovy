@@ -1,6 +1,6 @@
 package examples.c05
 
-// copyright 2012-18 Jon Kerridge
+// copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 
@@ -9,8 +9,8 @@ import jcsp.lang.*
 
 class QConsumer implements CSProcess {  
 	
-  def ChannelOutput get
-  def ChannelInput receive  
+  ChannelOutput get
+  ChannelInput receive
   def long delay = 0 
    
   void run () {

@@ -1,6 +1,6 @@
 package examples.c09
 
-// copyright 2012-18 Jon Kerridge
+// copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 
@@ -9,9 +9,9 @@ import groovy_jcsp.*
 
 class EventPrompter implements CSProcess {  
 	
-  def ChannelInput inChannel
-  def ChannelOutput getChannel
-  def ChannelOutput outChannel  
+  ChannelInput inChannel
+  ChannelOutput getChannel
+  ChannelOutput outChannel  
   
   void run () {
     def s = 1

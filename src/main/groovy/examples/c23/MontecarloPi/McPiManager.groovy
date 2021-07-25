@@ -9,10 +9,10 @@ import jcsp.lang.*
 
 class McPiManager implements CSProcess {
 	
-	def ChannelInput inChannel
-	def ChannelOutput outChannel
-	def ChannelOutputList toCores
-	def ChannelInputList fromCores
+	ChannelInput inChannel
+	ChannelOutput outChannel
+	ChannelOutputList toCores
+	ChannelInputList fromCores
 	
 	void run() {
 		def cores = fromCores.size()

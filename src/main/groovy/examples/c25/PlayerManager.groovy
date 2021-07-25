@@ -53,8 +53,8 @@ class PlayerManager implements CSProcess {
 			def cg = 4
 			for ( x in 0..(boardSize-1)){
 				for ( y in 0..(boardSize-1)){
-					def int xPos = offset[0]+(gap*x)+ (side*x)
-					def int yPos = offset[1]+(gap*y)+ (side*y)
+					int xPos = offset[0]+(gap*x)+ (side*x)
+					int yPos = offset[1]+(gap*y)+ (side*y)
 					//print " $x, $y, $xPos, $yPos, $cg, "
 					display[cg] = new GraphicsCommand.SetColor(Color.WHITE)
 					cg = cg+1
@@ -77,8 +77,8 @@ class PlayerManager implements CSProcess {
 		def colours = [Color.MAGENTA, Color.CYAN, Color.YELLOW, Color.PINK]
 		
 		def changePairs = {x, y, colour, p ->
-			def int xPos = offset[0]+(gap*x)+ (side*x)
-			def int yPos = offset[1]+(gap*y)+ (side*y)
+			int xPos = offset[0]+(gap*x)+ (side*x)
+			int yPos = offset[1]+(gap*y)+ (side*y)
 			changeGraphics[0] = new GraphicsCommand.SetColor(colour)
 			changeGraphics[1] = new GraphicsCommand.FillRect(xPos, yPos, side, side)
 			changeGraphics[2] = new GraphicsCommand.SetColor(Color.BLACK)

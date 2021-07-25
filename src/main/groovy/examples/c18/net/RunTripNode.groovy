@@ -9,7 +9,7 @@ import jcsp.userIO.*
 
 Node.getInstance().init(new TCPIPNodeFactory())
 
-def int nodeId = Ask.Int ("Node identification? ", 1, 9)
+int nodeId = Ask.Int ("Node identification? ", 1, 9)
 
 def toRoot = CNS.createAny2Net("toRoot")
 

@@ -5,13 +5,13 @@ import groovy_jcsp.*
 
 class GSCopy implements CSProcess {
   
-  def ChannelInput inChannel
-  def ChannelOutput outChannel0
-  def ChannelOutput outChannel1
+  ChannelInput inChannel
+  ChannelOutput outChannel0
+  ChannelOutput outChannel1
   
   void run () {
      while (true) {
-      def i = inChannel.read()
+      int i = inChannel.read()
       // output the input value in sequence to each output channel
     }
   }

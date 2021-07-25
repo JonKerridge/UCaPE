@@ -1,6 +1,6 @@
 package examples.c14
 
-// copyright 2012-18 Jon Kerridge
+// copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 import jcsp.lang.*
 import groovy_jcsp.*
@@ -8,12 +8,12 @@ import jcsp.awt.*
 import java.awt.*
 
 class DisplayController implements CSProcess {
-  def ChannelInput stateChange
-  def ChannelInput activeTargets
+  ChannelInput stateChange
+  ChannelInput activeTargets
   
   def DisplayList displayList
-  def ChannelOutput hitsToGallery
-  def ChannelOutput possiblesToGallery
+  ChannelOutput hitsToGallery
+  ChannelOutput possiblesToGallery
   
   def Barrier setUpBarrier
   def Barrier goBarrier

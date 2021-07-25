@@ -7,13 +7,13 @@ import examples.c05.*
 
 class ScalingDevice implements CSProcess {
 
-  def ChannelInput inChannel
-  def ChannelOutput outChannel
+  ChannelInput inChannel
+  ChannelOutput outChannel
   
   void run() {
-    def oldScale = Channel.createOne2One()
-    def newScale = Channel.createOne2One()
-    def pause = Channel.createOne2One()
+    def oldScale = Channel.one2one()
+    def newScale = Channel.one2one()
+    def pause = Channel.one2one()
 
     def scaler = new Scale ( inChannel: inChannel,
                               outChannel: outChannel,

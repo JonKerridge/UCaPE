@@ -1,6 +1,6 @@
 package examples.c10
 
-// copyright 2012-18 Jon Kerridge
+// copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 import jcsp.lang.*
@@ -9,11 +9,11 @@ import groovy_jcsp.plugAndPlay.*
 
 class Elementv1 implements CSProcess {
   
-  def ChannelInput fromRing
-  def ChannelOutput toRing
-  def int element
-  def int nodes
-  def int iterations = 12
+  ChannelInput fromRing
+  ChannelOutput toRing
+  int element
+  int nodes
+  int iterations = 12
   
   void run() {
     def S2RE = Channel.one2one()

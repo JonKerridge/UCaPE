@@ -8,8 +8,8 @@ import groovy_jcsp.*
  
 class ForwardBackAgent implements MobileAgent {
   
-  def ChannelOutput toLocal
-  def ChannelInput fromLocal
+  ChannelOutput toLocal
+  ChannelInput fromLocal
   def NetChannelLocation backChannel
   def results = [ ]
                   

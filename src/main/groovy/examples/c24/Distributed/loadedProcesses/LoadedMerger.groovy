@@ -6,8 +6,8 @@ import examples.c24.Distributed.processes.*
 
 class LoadedMerger implements WorkerInterface {
   
-  def ChannelInputList inChannels
-  def ChannelOutputList outChannels
+  ChannelInputList inChannels
+  ChannelOutputList outChannels
   
   def sourceList
   def runs

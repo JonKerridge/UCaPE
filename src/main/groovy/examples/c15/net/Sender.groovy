@@ -5,7 +5,7 @@ import groovy_jcsp.*
 
 class Sender implements CSProcess {
   
-  def ChannelOutput outChannel
+  ChannelOutput outChannel
   def String id
   
   void run() {

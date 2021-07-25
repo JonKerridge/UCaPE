@@ -1,6 +1,6 @@
 package examples.c13
  
-// copyright 2012-18 Jon Kerridge
+// copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 
@@ -9,17 +9,17 @@ import groovy_jcsp.*
 
 class Write implements CSProcess {
   
-  def ChannelOutput w2db
-  def ChannelInput db2w
-  def int id
-  def ChannelOutput toConsole
+  ChannelOutput w2db
+  ChannelInput db2w
+  int id
+  ChannelOutput toConsole
   
   void run () {
 	def timer = new CSTimer()
     toConsole.write ( "Writer $id has started \n" )
     for ( j in 0 ..<10 ) {
       def d = new DataObject(pid:id)
-      def i = 9 - j    // write in reverse order
+      int i = 9 - j    // write in reverse order
       d.location = i
       d.value = i + ((id+1)*1000)
       w2db.write(d)

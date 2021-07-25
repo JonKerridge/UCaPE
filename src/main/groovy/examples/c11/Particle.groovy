@@ -1,7 +1,7 @@
 package examples.c11
  
 
-// copyright 2012-18 Jon Kerridge
+// copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 
@@ -9,13 +9,13 @@ import jcsp.lang.*
 
 class Particle implements CSProcess {
 	
-  def ChannelOutput sendPosition
-  def ChannelInput getPosition
-  def int x = 100         // initial x location
-  def int y = 100         // initial y location
+  ChannelOutput sendPosition
+  ChannelInput getPosition
+  int x = 100         // initial x location
+  int y = 100         // initial y location
   def long delay = 200    // delay between movements
-  def int id
-  def int temperature = 25 // in range 10 to 50
+  int id
+  int temperature = 25 // in range 10 to 50
   
   void run() {
     def timer = new CSTimer()

@@ -1,14 +1,14 @@
 package examples.c18.net2
 
-// copyright 2012-18 Jon Kerridge
+// copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 import groovy_jcsp.*
 import jcsp.lang.*
 import jcsp.userIO.*
  
-def int nodes = Ask.Int ("Number of Nodes ? ", 1, 9)
-def int iterations = Ask.Int ("Number of Iterations ? ", 1, 9)
+int nodes = Ask.Int ("Number of Nodes ? ", 1, 9)
+int iterations = Ask.Int ("Number of Iterations ? ", 1, 9)
 def String initialValue = Ask.string ( "Initial List Value ? ")
 
 def ring = Channel.one2oneArray(nodes+1)

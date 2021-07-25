@@ -7,10 +7,10 @@ import groovy_jcsp.*
 
 class StopAgent implements MobileAgent {
   
-  def ChannelOutput toLocal
-  def ChannelInput fromLocal
-  def int homeNode
-  def int previousNode
+  ChannelOutput toLocal
+  ChannelInput fromLocal
+  int homeNode
+  int previousNode
   def boolean initialised
   def NetChannelLocation nextNodeInputEnd
                   

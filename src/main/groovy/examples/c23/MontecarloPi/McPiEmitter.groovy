@@ -9,8 +9,8 @@ import groovy_jcsp.ChannelOutputList;
 
 class McPiEmitter implements WorkerInterface {
 	
-	def ChannelInputList inChannels 
-	def ChannelOutputList outChannels 
+	ChannelInputList inChannels 
+	ChannelOutputList outChannels 
 	def workers = 1
 	def iterations = 192
 	

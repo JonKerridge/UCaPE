@@ -9,7 +9,7 @@ import jcsp.lang.*
 
 class Merger implements CSProcess {
   
-  def ChannelInputList fromWorkers
+  ChannelInputList fromWorkers
   def sourceList
   def runs
   def N

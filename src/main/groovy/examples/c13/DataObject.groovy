@@ -1,6 +1,6 @@
 package examples.c13
 
-// copyright 2012-18 Jon Kerridge
+// copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 
@@ -9,9 +9,9 @@ import groovy_jcsp.*
 
 class DataObject implements Serializable, JCSPCopy {
 	
-  def int pid
-  def int location
-  def int value
+  int pid
+  int location
+  int value
   
   def DataObject copy () {
     def dObj = new DataObject ( pid: this.pid,

@@ -4,7 +4,7 @@ import jcsp.lang.*
 
 class CreateSetsOfEight implements CSProcess{
 	
-	def ChannelInput inChannel
+	ChannelInput inChannel
 
 	void run(){
 		def outList = []

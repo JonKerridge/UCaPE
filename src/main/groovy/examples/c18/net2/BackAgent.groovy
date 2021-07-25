@@ -1,6 +1,6 @@
 package examples.c18.net2
 
-// copyright 2012-18 Jon Kerridge
+// copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 import jcsp.lang.*
 import groovy_jcsp.*
@@ -8,8 +8,8 @@ import jcsp.net2.*
 
 class BackAgent implements MobileAgent {
 	
-  def ChannelOutput toLocal
-  def ChannelInput fromLocal
+  ChannelOutput toLocal
+  ChannelInput fromLocal
   def NetChannelLocation backChannel
   
   def results = [ ]    

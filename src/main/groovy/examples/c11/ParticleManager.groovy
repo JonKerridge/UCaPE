@@ -1,5 +1,5 @@
 package examples.c11
- // copyright 2012-18 Jon Kerridge
+ // copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 import groovy_jcsp.*
 import jcsp.lang.*
@@ -9,16 +9,16 @@ import java.awt.*
 
 class ParticleManager implements CSProcess {
 	
-  def ChannelInput fromParticles
-  def ChannelOutput toParticles
+  ChannelInput fromParticles
+  ChannelOutput toParticles
   def DisplayList toUI
-  def int CANVASSIZE
-  def int PARTICLES
-  def int CENTRE
-  def int START_TEMP
-  def ChannelInput fromUIButtons
-  def ChannelOutput toUILabel
-  def ChannelOutput toUIPause  
+  int CANVASSIZE
+  int PARTICLES
+  int CENTRE
+  int START_TEMP
+  ChannelInput fromUIButtons
+  ChannelOutput toUILabel
+  ChannelOutput toUIPause  
   
   void run() {
     def colourList = [ Color.BLUE, Color.GREEN, 

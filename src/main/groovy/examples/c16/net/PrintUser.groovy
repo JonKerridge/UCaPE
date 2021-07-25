@@ -10,9 +10,9 @@ import jcsp.userIO.*
 
 class PrintUser implements CSProcess {
   
-  def ChannelOutput printerRequest
-  def ChannelOutput printerRelease
-  def int userId
+  ChannelOutput printerRequest
+  ChannelOutput printerRelease
+  int userId
   
   void run() {
     def timer = new CSTimer()

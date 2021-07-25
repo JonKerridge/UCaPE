@@ -9,13 +9,13 @@ import jcsp.lang.*
 
 class McPiCore implements CSProcess {
 	
-	def ChannelInput inChannel
-	def ChannelOutput outChannel
+	ChannelInput inChannel
+	ChannelOutput outChannel
 	
 	void run() {
 		def iterations = inChannel.read()
 		def rng = new Random()
-		def int inQuadrant = 0
+		int inQuadrant = 0
 		1.upto(iterations) {
 			def randomX = rng.nextFloat()
 			def randomY = rng.nextFloat()

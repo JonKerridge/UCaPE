@@ -5,11 +5,11 @@ import groovy_jcsp.*
 
 class Queue implements CSProcess {
 
-  def ChannelInput fromElement
-  def ChannelInput fromPrompter
-  def ChannelOutput toStateManager
-  def ChannelOutput toPrompter
-  def int slots
+  ChannelInput fromElement
+  ChannelInput fromPrompter
+  ChannelOutput toStateManager
+  ChannelOutput toPrompter
+  int slots
 
   void run() {
     def qAlt = new ALT ( [ fromElement, fromPrompter ] )

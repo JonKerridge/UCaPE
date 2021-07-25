@@ -9,7 +9,7 @@ import jcsp.lang.*
 
 class UCInterface implements CSProcess {
 	
-	def ChannelOutput sendNodeIdentity
+	ChannelOutput sendNodeIdentity
 	
 	void run (){
 		def root = new ActiveClosingFrame ("Universal Client")

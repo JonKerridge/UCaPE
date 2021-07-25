@@ -4,9 +4,9 @@ import jcsp.net2.*
 import jcsp.net2.tcpip.*
 import groovy_jcsp.*
 
-def int nodeId = 5
-def int sentMessages = 500
-def int nodes = 5
+int nodeId = 5
+int sentMessages = 500
+int nodes = 5
 
 def nodeIP = "127.0.0.5"
 def nextNodeIP = "127.0.0.6"

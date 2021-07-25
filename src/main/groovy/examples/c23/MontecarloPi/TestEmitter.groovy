@@ -5,7 +5,7 @@ import groovy_jcsp.*
 
 class TestEmitter implements CSProcess {
 	
-	def ChannelOutputList toWorkers
+	ChannelOutputList toWorkers
 	def workers = 1
 	def iterations = 192
 	

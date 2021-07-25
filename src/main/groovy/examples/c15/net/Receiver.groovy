@@ -5,7 +5,7 @@ import jcsp.lang.*
 
 class Receiver implements CSProcess {
   
-  def ChannelInput inChannel
+  ChannelInput inChannel
   
   void run() {
     while (true) {

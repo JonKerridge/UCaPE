@@ -6,15 +6,15 @@ import groovy_jcsp.plugAndPlay.*
 
 class DifferentiateNeg implements CSProcess {
   
-  def ChannelInput  inChannel
-  def ChannelOutput outChannel
+  ChannelInput  inChannel
+  ChannelOutput outChannel
   
   void run() {
     
-    One2OneChannel a = Channel.createOne2One()
-    One2OneChannel b = Channel.createOne2One()
-    One2OneChannel c = Channel.createOne2One()
-    One2OneChannel d = Channel.createOne2One()
+    One2OneChannel a = Channel.one2one()
+    One2OneChannel b = Channel.one2one()
+    One2OneChannel c = Channel.one2one()
+    One2OneChannel d = Channel.one2one()
     
     def differentiateList = [ new GPrefix ( prefixValue: 0, 
                                             inChannel: b.in(), 

@@ -1,6 +1,6 @@
 package examples.c16.net2
  
-// copyright 2012-18 Jon Kerridge
+// copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 
@@ -9,6 +9,6 @@ package examples.c16.net2
 
 class Printline implements Serializable {  
 	
-  def int printKey
+  int printKey
   def String line  
 }

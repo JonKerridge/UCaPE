@@ -1,6 +1,6 @@
 package examples.c14
 
-// copyright 2012-18 Jon Kerridge
+// copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 
@@ -9,9 +9,9 @@ import groovy_jcsp.*
 
 class MouseBufferPrompt implements CSProcess{
 	
-  def ChannelOutput returnPoint
-  def ChannelOutput getPoint
-  def ChannelInput receivePoint  
+  ChannelOutput returnPoint
+  ChannelOutput getPoint
+  ChannelInput receivePoint  
   def Barrier setUpBarrier
 
   void run () {

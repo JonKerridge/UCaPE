@@ -6,7 +6,7 @@ import examples.c05.*
 
 class CollectNumbers implements CSProcess {
   
-  def ChannelInput inChannel
+  ChannelInput inChannel
   def collectedList = []
   def scaledList = [] 
   def iterations = 20

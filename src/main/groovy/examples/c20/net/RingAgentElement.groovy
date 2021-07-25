@@ -9,21 +9,21 @@ import groovy_jcsp.plugAndPlay.*
 
 class RingAgentElement implements CSProcess {
   
-  def ChannelInput fromRing
-  def ChannelOutput toRing
-  def ChannelInput fromSender
-  def ChannelInput fromStateManager
-  def ChannelOutput toQueue
-  def int element
+  ChannelInput fromRing
+  ChannelOutput toRing
+  ChannelInput fromSender
+  ChannelInput fromStateManager
+  ChannelOutput toQueue
+  int element
   
   void run() {
-    def One2OneChannel N2A = Channel.createOne2One()
-    def One2OneChannel A2N = Channel.createOne2One()  
+    def N2A = Channel.one2one()
+    def A2N = Channel.one2one()  
 
-    def ChannelInput toAgentInEnd = N2A.in()
-    def ChannelInput fromAgentInEnd = A2N.in()
-    def ChannelOutput toAgentOutEnd = N2A.out()
-    def ChannelOutput fromAgentOutEnd = A2N.out()
+    ChannelInput toAgentInEnd = N2A.in()
+    ChannelInput fromAgentInEnd = A2N.in()
+    ChannelOutput toAgentOutEnd = N2A.out()
+    ChannelOutput fromAgentOutEnd = A2N.out()
     
     def stopper = new StopAgent ( homeNode: element, 
                                    previousNode: element - 1, 

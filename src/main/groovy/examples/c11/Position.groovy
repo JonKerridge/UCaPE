@@ -1,6 +1,6 @@
 package examples.c11
  
-// copyright 2012-18 Jon Kerridge
+// copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 
@@ -9,12 +9,12 @@ import groovy_jcsp.*
 
 class Position implements JCSPCopy {
 	
-  def int id            // particle number
-  def int lx            // current x location of particle
-  def int ly            // current y location of particle
-  def int px            // previous x location of particle
-  def int py            // previous y location of particle
-  def int temperature   // current working temperature
+  int id            // particle number
+  int lx            // current x location of particle
+  int ly            // current y location of particle
+  int px            // previous x location of particle
+  int py            // previous y location of particle
+  int temperature   // current working temperature
   
   def copy() {
     def p = new Position ( id: this.id,  

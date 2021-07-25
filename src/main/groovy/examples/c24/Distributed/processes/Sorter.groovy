@@ -10,8 +10,8 @@ import examples.c24.Distributed.dataRecords.*
 class Sorter implements CSProcess {
   
   def Nvalue = 0
-  def ChannelInput startChannel
-  def ChannelOutput toMerger
+  ChannelInput startChannel
+  ChannelOutput toMerger
   def sbl   // the reference to the sequenceBlockList
   def source
   def run

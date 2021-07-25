@@ -9,9 +9,9 @@ import jcsp.lang.*
 
 class StateManager implements CSProcess{
   
-  def ChannelInput fromQueue
-  def ChannelOutput toElement
-  def int queueSlots
+  ChannelInput fromQueue
+  ChannelOutput toElement
+  int queueSlots
 
   void run() {
     def limit = queueSlots / 2

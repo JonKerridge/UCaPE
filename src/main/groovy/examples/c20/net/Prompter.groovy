@@ -5,9 +5,9 @@ import groovy_jcsp.*
 
 class Prompter implements CSProcess{
   
-  def ChannelOutput toQueue
-  def ChannelInput fromQueue
-  def ChannelOutput toReceiver
+  ChannelOutput toQueue
+  ChannelInput fromQueue
+  ChannelOutput toReceiver
 
   void run() {
     while (true) {

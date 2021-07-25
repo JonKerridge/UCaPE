@@ -1,6 +1,6 @@
 package examples.c05
  
-// copyright 2012-18 Jon Kerridge
+// copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 
@@ -9,14 +9,14 @@ import groovy_jcsp.*
 
 class Scale implements CSProcess {
 	
-  def int scaling = 2
-  def int multiplier = 2
+  int scaling = 2
+  int multiplier = 2
   
-  def ChannelOutput outChannel
-  def ChannelOutput factor
-  def ChannelInput inChannel
-  def ChannelInput suspend
-  def ChannelInput injector
+  ChannelOutput outChannel
+  ChannelOutput factor
+  ChannelInput inChannel
+  ChannelInput suspend
+  ChannelInput injector
   
   void run () {
     def SECOND = 1000

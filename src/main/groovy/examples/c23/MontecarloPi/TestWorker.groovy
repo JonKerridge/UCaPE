@@ -5,8 +5,8 @@ import groovy_jcsp.*
 
 class TestWorker implements CSProcess {
 	
-	def ChannelInput inChannel
-	def ChannelOutput outChannel
+	ChannelInput inChannel
+	ChannelOutput outChannel
 	def cores = 1
 	
 	void run(){

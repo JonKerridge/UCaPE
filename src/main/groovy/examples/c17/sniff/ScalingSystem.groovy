@@ -1,6 +1,6 @@
 package examples.c17.sniff
 
-// copyright 2012-18 Jon Kerridge
+// copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 import jcsp.lang.*
@@ -10,8 +10,8 @@ import groovy_jcsp.plugAndPlay.*
 import examples.c05.*
 class ScalingSystem implements CSProcess{  
 	
-  def ChannelOutput toSniffer
-  def ChannelOutput toComparator
+  ChannelOutput toSniffer
+  ChannelOutput toComparator
   
   void run() {    
     def data1 = Channel.one2one()

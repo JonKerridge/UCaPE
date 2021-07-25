@@ -9,11 +9,11 @@ import groovy_jcsp.plugAndPlay.*
 
 class AgentElement implements CSProcess {
   
-  def ChannelInput fromRing
-  def ChannelOutput toRing
-  def int element
-  def int nodes
-  def int iterations
+  ChannelInput fromRing
+  ChannelOutput toRing
+  int element
+  int nodes
+  int iterations
   
   def void run() {
     def S2RE = Channel.one2one()

@@ -6,12 +6,12 @@ import jcsp.lang.ChannelOutput
 
 class Hopper implements CSProcess {
 	
-	def ChannelInput fromConsole
-	def ChannelOutput toConsole
-	def ChannelOutput clearConsole
-	def ChannelOutput toManager
-	def ChannelInput fromManager	
-	def int hopper
+	ChannelInput fromConsole
+	ChannelOutput toConsole
+	ChannelOutput clearConsole
+	ChannelOutput toManager
+	ChannelInput fromManager
+	int hopper
 	
 	void run () {
 		while (true) {

@@ -107,7 +107,7 @@ class defsWithComments {
 	def static sequencer (n, baseList, outList){
 		def seqLength = baseList.size()
 		for (gl in 0..seqLength-n) {
-			def int partSum = 0
+			int partSum = 0
 			for ( i in 0..< n) partSum = partSum + baseList[gl + i]
 			outList << partSum
 		}		

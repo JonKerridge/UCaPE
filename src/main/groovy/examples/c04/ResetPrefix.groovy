@@ -1,6 +1,6 @@
 package examples.c04
 
-// copyright 2012-18 Jon Kerridge
+// copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 
@@ -9,10 +9,10 @@ import groovy_jcsp.*
 
 class ResetPrefix implements CSProcess {
   
-  def int prefixValue = 0
-  def ChannelOutput outChannel
-  def ChannelInput  inChannel
-  def ChannelInput  resetChannel
+  int prefixValue = 0
+  ChannelOutput outChannel
+  ChannelInput  inChannel
+  ChannelInput  resetChannel
   
   void run () {
     def guards = [ resetChannel, inChannel  ]

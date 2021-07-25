@@ -1,6 +1,6 @@
 package examples.c15.net2
 
-// copyright 2012-18 Jon Kerridge
+// copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 
@@ -8,8 +8,8 @@ import jcsp.lang.*
 
 class Get implements CSProcess {
 	 
-  def ChannelInput inChannel
-  def int id = 0  
+  ChannelInput inChannel
+  int id = 0  
   
   void run() {
     def timer = new CSTimer()

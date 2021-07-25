@@ -8,7 +8,7 @@ import examples.c19.net2.netObjects.*
 
 class UCCapability implements CSProcess {
 	
-	def ChannelInput receiveNodeIdentity
+	ChannelInput receiveNodeIdentity
 	def networkBaseIP = "127.0.0."
 	
 	void run(){

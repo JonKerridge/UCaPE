@@ -13,8 +13,8 @@ class Worker implements CSProcess {
   def sbl   // the reference to the sequenceBlockList
   def source
   def run
-  def ChannelInput inChannel
-  def ChannelOutput ssp // connection to startSortPhase
+  ChannelInput inChannel
+  ChannelOutput ssp // connection to startSortPhase
   def node
   def timeWriter
 

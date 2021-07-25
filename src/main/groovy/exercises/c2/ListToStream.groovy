@@ -4,8 +4,8 @@ import jcsp.lang.*
 
 class ListToStream implements CSProcess{
 	
-	def ChannelInput inChannel
-	def ChannelOutput outChannel
+	ChannelInput inChannel
+	ChannelOutput outChannel
 	
 	void run (){
 		def inList = inChannel.read()

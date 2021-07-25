@@ -5,8 +5,8 @@ import groovy_jcsp.*
 
 class Get implements CSProcess {
   
-  def ChannelInput inChannel
-  def int id
+  ChannelInput inChannel
+  int id
   
   def void run() {
     def timer = new CSTimer()

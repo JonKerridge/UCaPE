@@ -10,8 +10,8 @@ class Matcher implements CSProcess {
 	ChannelOutput getPoint
 	
 	def getXY = { point, side, gap ->
-		def int x = (point[0] - gap) / (side + gap)
-		def int y = (point[1] - gap) / (side + gap)
+		int x = (point[0] - gap) / (side + gap)
+		int y = (point[1] - gap) / (side + gap)
 		return [x, y]
 	}
 	

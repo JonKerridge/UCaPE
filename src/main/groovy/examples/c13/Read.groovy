@@ -1,6 +1,6 @@
 package examples.c13
  
-// copyright 2012-18 Jon Kerridge
+// copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 
@@ -9,10 +9,10 @@ import groovy_jcsp.*
 
 class Read implements CSProcess {
   
-  def ChannelOutput r2db
-  def ChannelInput db2r
-  def int id
-  def ChannelOutput toConsole
+  ChannelOutput r2db
+  ChannelInput db2r
+  int id
+  ChannelOutput toConsole
   
   void run () {
 	def timer = new CSTimer()

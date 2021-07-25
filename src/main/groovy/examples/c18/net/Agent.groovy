@@ -5,8 +5,8 @@ import groovy_jcsp.MobileAgent
 
 class Agent implements MobileAgent {
   
-  def ChannelOutput toLocal
-  def ChannelInput fromLocal
+  ChannelOutput toLocal
+  ChannelInput fromLocal
   def results = [ ]
                   
   def connect ( c ) {

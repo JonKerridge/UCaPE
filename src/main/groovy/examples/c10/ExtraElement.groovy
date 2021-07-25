@@ -1,6 +1,6 @@
 package examples.c10
 
-// copyright 2012-18 Jon Kerridge
+// copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 
@@ -9,8 +9,8 @@ import groovy_jcsp.*
 
 class ExtraElement implements CSProcess {
 
-  def ChannelInput fromRing
-  def ChannelOutput toRing
+  ChannelInput fromRing
+  ChannelOutput toRing
   
   void run () {
     def packet = new RingPacket (source:-1, destination:-1, value:-1, full: false )

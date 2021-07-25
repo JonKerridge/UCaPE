@@ -1,6 +1,6 @@
 package examples.c07
 
-// copyright 2012-18 Jon Kerridge
+// copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 
@@ -9,8 +9,8 @@ import groovy_jcsp.*
 
 class BadP implements CSProcess {
 	
-  def ChannelInput inChannel
-  def ChannelOutput outChannel  
+  ChannelInput inChannel
+  ChannelOutput outChannel  
   
   def void run() {
     println "BadP: Starting"
@@ -19,7 +19,7 @@ class BadP implements CSProcess {
       println "BadP: outputting"
       outChannel.write(1)
       println "BadP: inputting"
-      def i = inChannel.read()
+      int i = inChannel.read()
       println "BadP: looping"
     }
   }

@@ -6,9 +6,9 @@ import groovy_jcsp.*
 
 class ResetSuccessor implements CSProcess {
 	  
-  def ChannelOutput outChannel
-  def ChannelInput  inChannel
-  def ChannelInput  resetChannel
+  ChannelOutput outChannel
+  ChannelInput  inChannel
+  ChannelInput  resetChannel
 	  
   void run () {
     def guards = [ resetChannel, inChannel  ]

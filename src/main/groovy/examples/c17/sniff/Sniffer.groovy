@@ -1,6 +1,6 @@
 package examples.c17.sniff
 
-// copyright 2012-18 Jon Kerridge
+// copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 import jcsp.lang.*
@@ -9,8 +9,8 @@ import groovy_jcsp.*
 
 class Sniffer implements CSProcess{  
 	
-  def ChannelInput fromSystemCopy
-  def ChannelOutput toComparator
+  ChannelInput fromSystemCopy
+  ChannelOutput toComparator
   def sampleInterval = 10000
   
   void run() {

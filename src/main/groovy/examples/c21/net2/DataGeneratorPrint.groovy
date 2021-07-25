@@ -7,11 +7,11 @@ import jcsp.net2.*
 //import jcsp.net2.tcpip.*
 
 class DataGeneratorPrint implements CSProcess {
-  def ChannelInput fromNodes
-  def interval = 1000
+  ChannelInput fromNodes
+  long interval = 1000
 
   void run() {
-    def ChannelOutputList toNodes = new ChannelOutputList()
+    ChannelOutputList toNodes = new ChannelOutputList()
     def agentVisitChannelList = [ ]
     def allocationList = [ ]
     def rng = new Random()

@@ -9,9 +9,9 @@ import jcsp.userIO.*
 
 Node.getInstance().init(new TCPIPNodeFactory())
 
-def int nodeId = 3
-def int sentMessages = 150
-def int nodes = 4
+int nodeId = 3
+int sentMessages = 150
+int nodes = 4
 
 def fromRingName = "ring3" 
 def toRingName = "ring4"

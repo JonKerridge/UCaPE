@@ -1,6 +1,6 @@
 package examples.c11
  
-// copyright 2012-18 Jon Kerridge
+// copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 import groovy_jcsp.*
 import jcsp.lang.*
@@ -10,10 +10,10 @@ import java.awt.*
 class UserInterface implements CSProcess {
 	
   def ActiveCanvas particleCanvas
-  def int canvasSize
-  def ChannelInput tempValueConfig
-  def ChannelInput pauseButtonConfig
-  def ChannelOutput buttonEvent
+  int canvasSize
+  ChannelInput tempValueConfig
+  ChannelInput pauseButtonConfig
+  ChannelOutput buttonEvent
   
   void run() {
     def root = new ActiveClosingFrame ("Brownian Motion Particle System")

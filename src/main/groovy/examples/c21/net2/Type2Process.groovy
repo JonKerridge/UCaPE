@@ -10,8 +10,8 @@ import jcsp.net2.*
 class Type2Process extends DynamicMobileProcess implements Serializable {
 	
   def toGatherer
-  def ChannelInput inChannel
-  def int nodeId
+  ChannelInput inChannel
+  int nodeId
   
   def connect (l) {
     inChannel = l[0]

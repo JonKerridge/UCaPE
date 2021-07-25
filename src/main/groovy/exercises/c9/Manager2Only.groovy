@@ -6,11 +6,11 @@ import groovy_jcsp.plugAndPlay.*
 
 class Manager2Only implements CSProcess {
 	
-	def ChannelInputList inputs
-	def ChannelOutputList outputs
-	def ChannelInput fromBlender
-	def ChannelOutput toBlender
-	def int hoppers = 3
+	ChannelInputList inputs
+	ChannelOutputList outputs
+	ChannelInput fromBlender
+	ChannelOutput toBlender
+	int hoppers = 3
 
 	void run(){
 		def alt = new ALT(inputs)

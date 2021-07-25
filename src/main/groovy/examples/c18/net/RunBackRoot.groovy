@@ -9,7 +9,7 @@ import jcsp.userIO.*
 
 Node.getInstance().init(new TCPIPNodeFactory())
 
-def int iterations = Ask.Int ("Number of Iterations ? ", 1, 9)
+int iterations = Ask.Int ("Number of Iterations ? ", 1, 9)
 def String initialValue = Ask.string ( "Initial List Value ? ")
 
 def fromRingName = "ring0"

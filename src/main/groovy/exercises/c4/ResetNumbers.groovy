@@ -7,15 +7,15 @@ import groovy_jcsp.plugAndPlay.*
 
 class ResetNumbers implements CSProcess {
   
-  def ChannelOutput outChannel
-  def ChannelInput resetChannel
-  def int initialValue = 0
+  ChannelOutput outChannel
+  ChannelInput resetChannel
+  int initialValue = 0
   
   void run() {
     
-    One2OneChannel a = Channel.createOne2One()
-    One2OneChannel b = Channel.createOne2One()
-    One2OneChannel c = Channel.createOne2One()
+    One2OneChannel a = Channel.one2one()
+    One2OneChannel b = Channel.one2one()
+    One2OneChannel c = Channel.one2one()
     
     def testList = [ new GPrefix ( prefixValue: initialValue, 
                                    outChannel: a.out(), 

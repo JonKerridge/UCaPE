@@ -6,8 +6,8 @@ import examples.c24.Distributed.processes.*
 
 class LoadedReader implements WorkerInterface {
   
-  def ChannelInputList inChannels
-  def ChannelOutputList outChannels
+  ChannelInputList inChannels
+  ChannelOutputList outChannels
 
   def inRoot 
   def N 

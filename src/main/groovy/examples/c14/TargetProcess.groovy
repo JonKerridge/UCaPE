@@ -1,6 +1,6 @@
 package examples.c14
   
-// copyright 2012-18 Jon Kerridge
+// copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 import jcsp.lang.*
@@ -9,17 +9,17 @@ import groovy_jcsp.*
  
 class TargetProcess implements CSProcess {
 	
-  def ChannelOutput targetRunning
-  def ChannelOutput stateToDC
-  def ChannelInput mousePoint
+  ChannelOutput targetRunning
+  ChannelOutput stateToDC
+  ChannelInput mousePoint
   def Barrier setUpBarrier
   def Barrier initBarrier
   def Barrier goBarrier
   def AltingBarrier timeAndHitBarrier
   def buckets
-  def int targetId
-  def int x
-  def int y
+  int targetId
+  int x
+  int y
   def delay = 2000
   
   def boolean within ( Point p, int x, int y) {
@@ -35,7 +35,7 @@ class TargetProcess implements CSProcess {
   void run() {
     def rng = new Random()
     def timer = new CSTimer()
-    def int range = buckets.size() / 2
+    int range = buckets.size() / 2
     def bucketId = rng.nextInt( range )
     def POINT= 1
     def TIMER = 0

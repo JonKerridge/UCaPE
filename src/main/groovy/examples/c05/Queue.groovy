@@ -1,6 +1,6 @@
 package examples.c05
 
-// copyright 2012-18 Jon Kerridge
+// copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 
@@ -9,10 +9,10 @@ import groovy_jcsp.*
 
 class Queue implements CSProcess {  
 	
-  def ChannelInput  put
-  def ChannelInput  get
-  def ChannelOutput receive
-  def int elements = 5   
+  ChannelInput  put
+  ChannelInput  get
+  ChannelOutput receive
+  int elements = 5   
   
   void run() {
     def qAlt = new ALT ( [ put, get ] )

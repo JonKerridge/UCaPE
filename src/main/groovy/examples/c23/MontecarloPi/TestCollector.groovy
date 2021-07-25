@@ -5,7 +5,7 @@ import groovy_jcsp.*
 
 class TestCollector implements CSProcess {
 	
-	def ChannelInputList fromWorkers
+	ChannelInputList fromWorkers
 	def workers = 1
 	def iterations = 192
 	

@@ -9,7 +9,7 @@ import groovy_jcsp.PAR
 
 class AccessInterface implements CSProcess {
 	
-	def ChannelOutput buttonEvents
+	ChannelOutput buttonEvents
 	
 	void run (){
 		def root = new ActiveClosingFrame ("Access Server")

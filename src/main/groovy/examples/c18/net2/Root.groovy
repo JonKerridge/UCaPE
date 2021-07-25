@@ -1,24 +1,24 @@
 package examples.c18.net2
 
-// copyright 2012-18 Jon Kerridge
+// copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 import jcsp.lang.*
 
 class Root implements CSProcess{
   
-  def ChannelInput inChannel
-  def ChannelOutput outChannel
-  def int iterations
+  ChannelInput inChannel
+  ChannelOutput outChannel
+  int iterations
   def String initialValue  
 
   void run() {
     def N2A = Channel.one2one()
     def A2N = Channel.one2one()  
-    def ChannelInput toAgentInEnd = N2A.in()
-    def ChannelInput fromAgentInEnd = A2N.in()
-    def ChannelOutput toAgentOutEnd = N2A.out()
-    def ChannelOutput fromAgentOutEnd = A2N.out()
+    ChannelInput toAgentInEnd = N2A.in()
+    ChannelInput fromAgentInEnd = A2N.in()
+    ChannelOutput toAgentOutEnd = N2A.out()
+    ChannelOutput fromAgentOutEnd = A2N.out()
 
     def theAgent = new Agent( results: [initialValue])
     

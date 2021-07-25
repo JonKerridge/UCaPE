@@ -10,7 +10,7 @@ import jcsp.userIO.*
 
 class Printline implements Serializable {
   
-  def int printKey
+  int printKey
   def String line
   
 }

@@ -9,8 +9,8 @@ import jcsp.lang.*
 
 class McPiWorker implements WorkerInterface {
 	
-	def ChannelInputList inChannels
-	def ChannelOutputList outChannels
+	ChannelInputList inChannels
+	ChannelOutputList outChannels
 	def cores = 1
 	
 	def connect(inChannels, outChannels){

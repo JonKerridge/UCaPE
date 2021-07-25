@@ -6,14 +6,14 @@ import groovy_jcsp.plugAndPlay.*
 
 class GSPairsB implements CSProcess {
   
-  def ChannelOutput outChannel
-  def ChannelInput  inChannel
+  ChannelOutput outChannel
+  ChannelInput  inChannel
   
   void run() {
     
-    One2OneChannel a = Channel.createOne2One()
-    One2OneChannel b = Channel.createOne2One()
-    One2OneChannel c = Channel.createOne2One()
+    One2OneChannel a = Channel.one2one()
+    One2OneChannel b = Channel.one2one()
+    One2OneChannel c = Channel.one2one()
     
     def pairsList  = [ new GPlus   ( outChannel: outChannel, 
                                      inChannel0: a.in(),

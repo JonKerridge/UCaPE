@@ -5,10 +5,10 @@ import groovy_jcsp.*
 
 class Receiver implements CSProcess {
 	
-  def ChannelInput fromElement
-  def ChannelOutput outChannel
-  def ChannelOutput clear
-  def ChannelInput fromConsole
+  ChannelInput fromElement
+  ChannelOutput outChannel
+  ChannelOutput clear
+  ChannelInput fromConsole
   
   def void run() {
     def recAlt = new ALT ([ fromConsole, fromElement])

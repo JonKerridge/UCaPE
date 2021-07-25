@@ -5,17 +5,17 @@ import jcsp.net.*
 
 class TripNode implements CSProcess{
   
-  def ChannelOutput toRoot
-  def int nodeId
+  ChannelOutput toRoot
+  int nodeId
   
-  def One2OneChannel N2A = Channel.createOne2One()
-  def One2OneChannel A2N = Channel.createOne2One()  
+  def N2A = Channel.one2one()
+  def A2N = Channel.one2one()  
 
   void run() {
-    def ChannelInput toAgentInEnd = N2A.in()
-    def ChannelInput fromAgentInEnd = A2N.in()
-    def ChannelOutput toAgentOutEnd = N2A.out()
-    def ChannelOutput fromAgentOutEnd = A2N.out()
+    ChannelInput toAgentInEnd = N2A.in()
+    ChannelInput fromAgentInEnd = A2N.in()
+    ChannelOutput toAgentOutEnd = N2A.out()
+    ChannelOutput fromAgentOutEnd = A2N.out()
     
     def agentInputChannel = NetChannelEnd.createNet2One()
     toRoot.write ( agentInputChannel.getChannelLocation())

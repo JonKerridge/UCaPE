@@ -1,6 +1,6 @@
 package examples.c05
  
-// copyright 2012-18 Jon Kerridge
+// copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 import jcsp.lang.*
 import groovy_jcsp.*
@@ -28,8 +28,8 @@ def network = [ new GNumbers ( outChannel: data.out() ),
                             scaling: 2 ),
 						
                 new Controller ( testInterval: 11000,
-                		         computeInterval: 3000,
-                		         addition: -1,
+																 computeInterval: 3000,
+                		             addition: -1,
                                  factor: oldScale.in(),
                                  suspend: pause.out(),
                                  injector: newScale.out() ),

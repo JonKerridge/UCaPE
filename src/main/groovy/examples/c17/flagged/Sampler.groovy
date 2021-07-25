@@ -1,6 +1,6 @@
 package examples.c17.flagged
 
-// copyright 2012-18 Jon Kerridge
+// copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 import groovy_jcsp.*
@@ -9,9 +9,9 @@ import jcsp.lang.*
 
 class Sampler implements CSProcess {  
 	
-  def ChannelInput inChannel
-  def ChannelOutput outChannel
-  def ChannelInput sampleRequest
+  ChannelInput inChannel
+  ChannelOutput outChannel
+  ChannelInput sampleRequest
   
   void run() {
     def sampleAlt = new ALT ([sampleRequest, inChannel])

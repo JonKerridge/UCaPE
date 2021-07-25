@@ -4,11 +4,11 @@ import groovy_jcsp.*
 import jcsp.lang.*
 import jcsp.userIO.*
  
-def int nodes = Ask.Int ("Number of Nodes ? ", 1, 9)
-def int iterations = Ask.Int ("Number of Iterations ? ", 1, 9)
+int nodes = Ask.Int ("Number of Nodes ? ", 1, 9)
+int iterations = Ask.Int ("Number of Iterations ? ", 1, 9)
 def String initialValue = Ask.string ( "Initial List Value ? ")
 
-def One2OneChannel [] ring = Channel.createOne2One(nodes+1)
+One2OneChannel[] ring = Channel.one2oneArray(nodes+1)
 
 def processNodes = (1 ..< nodes).collect { i -> new ProcessNode ( inChannel: ring[i].in(),
                                                                     outChannel: ring[i+1].out(),

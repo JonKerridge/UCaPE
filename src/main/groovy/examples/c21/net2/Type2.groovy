@@ -10,8 +10,8 @@ package examples.c21.net2
 class Type2 implements Serializable {
 
     def typeName = "Type2"
-    def int typeInstance 
-    def int instanceValue
+    int typeInstance 
+    int instanceValue
     
   def processedNode
   

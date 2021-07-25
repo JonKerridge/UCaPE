@@ -1,5 +1,5 @@
 package examples.c18.net2
-// copyright 2012-18 Jon Kerridge
+// copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 import jcsp.net2.*
 import jcsp.net2.tcpip.*
@@ -12,7 +12,7 @@ Node.getInstance().init(rootAddress)
 def fromNodes = NetChannel.net2one()
 
 def String initialValue = Ask.string ( "Initial List Value ? ")
-//def int nodes = Ask.Int ("Number of nodes (1..8) ? ", 1, 8)
+//int nodes = Ask.Int ("Number of nodes (1..8) ? ", 1, 8)
 int nodes = 4
 def rootNode = new TripRoot ( fromNodes: fromNodes, 
                                nodes: nodes,

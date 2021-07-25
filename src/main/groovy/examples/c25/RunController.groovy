@@ -5,9 +5,9 @@ import jcsp.lang.*
 import jcsp.util.*
 import groovy_jcsp.*
 
-//enrol = Channel.createOne2One()
-//fromPlayers = Channel.createOne2One()
-//toPlayers = Channel.createOne2One(8)
+//enrol = Channel.one2one()
+//fromPlayers = Channel.one2one()
+//toPlayers = Channel.one2oneArray(8)
 //def toPlayersList = new ChannelOutputList(toPlayers)
 /*
 control =new Controller ( enrol: enrol.in(),

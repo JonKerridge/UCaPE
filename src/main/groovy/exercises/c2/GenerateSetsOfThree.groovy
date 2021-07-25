@@ -4,7 +4,7 @@ import jcsp.lang.*
 
 class GenerateSetsOfThree implements CSProcess {
 	
-	def ChannelOutput outChannel
+	ChannelOutput outChannel
 	
 	void run(){
 		def threeList = [

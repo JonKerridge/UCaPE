@@ -5,12 +5,12 @@ import groovy_jcsp.*
 import examples.c05.ScaledData
    
 class Scale implements CSProcess {
-  def int scaling
-  def ChannelOutput outChannel
-  def ChannelOutput factor
-  def ChannelInput inChannel
-  def ChannelInput suspend
-  def ChannelInput injector
+  int scaling
+  ChannelOutput outChannel
+  ChannelOutput factor
+  ChannelInput inChannel
+  ChannelInput suspend
+  ChannelInput injector
   
   void run () {
     def SECOND = 1000

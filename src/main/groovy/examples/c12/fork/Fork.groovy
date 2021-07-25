@@ -1,6 +1,6 @@
 package examples.c12.fork
 
-// copyright 2012-18 Jon Kerridge
+// copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 
@@ -9,14 +9,14 @@ import groovy_jcsp.*
 
 class Fork implements CSProcess {
   
-  def ChannelInput left
-  def ChannelInput right
+  ChannelInput left
+  ChannelInput right
   
   void run () {
     def fromPhilosopher = [left, right]
     def forkAlt = new ALT ( fromPhilosopher )
     while (true) {
-      def i = forkAlt.select()
+      int i = forkAlt.select()
       fromPhilosopher[i].read()      //pick up fork i
       fromPhilosopher[i].read()      //put down fork i
     }

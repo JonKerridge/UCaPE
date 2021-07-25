@@ -1,5 +1,5 @@
 package examples.c11
- // copyright 2012-18 Jon Kerridge
+ // copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 import groovy_jcsp.*
 import jcsp.lang.*
@@ -9,12 +9,12 @@ import jcsp.awt.*
 
 class ParticleInterface implements CSProcess {
 	
-  def ChannelInput inChannel
-  def ChannelOutput outChannel
-  def int canvasSize = 100
-  def int particles
-  def int centre
-  def int initialTemp
+  ChannelInput inChannel
+  ChannelOutput outChannel
+  int canvasSize = 100
+  int particles
+  int centre
+  int initialTemp
   
   void run() {
     def dList = new DisplayList()

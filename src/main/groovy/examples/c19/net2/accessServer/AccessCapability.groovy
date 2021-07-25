@@ -9,7 +9,7 @@ import examples.c19.net2.netObjects.*
 
 class AccessCapability implements CSProcess {
 
-	def ChannelInput buttonEvents
+	ChannelInput buttonEvents
 	def NetChannelLocation processReceiveLocation
 	def NetChannelLocation accessRequestLocation
 	

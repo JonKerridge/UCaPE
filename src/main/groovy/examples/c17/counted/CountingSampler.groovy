@@ -1,6 +1,6 @@
 package examples.c17.counted
 
-// copyright 2012-18 Jon Kerridge
+// copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 import groovy_jcsp.*
@@ -9,10 +9,10 @@ import jcsp.lang.*
 
 class CountingSampler implements CSProcess {  
 	
-  def ChannelInput inChannel
-  def ChannelOutput outChannel
-  def ChannelInput sampleRequest
-  def ChannelOutput countReturn
+  ChannelInput inChannel
+  ChannelOutput outChannel
+  ChannelInput sampleRequest
+  ChannelOutput countReturn
   
   void run() {
     def sampleAlt = new ALT ([sampleRequest, inChannel])

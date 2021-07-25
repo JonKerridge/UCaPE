@@ -6,23 +6,23 @@ import groovy_jcsp.plugAndPlay.*
 
 class AgentElement implements CSProcess {
   
-  def ChannelInput fromRing
-  def ChannelOutput toRing
-  def int element
-  def int nodes
-  def int iterations
+  ChannelInput fromRing
+  ChannelOutput toRing
+  int element
+  int nodes
+  int iterations
   
   def void run() {
-    One2OneChannel S2RE = Channel.createOne2One()
-    One2OneChannel RE2Q = Channel.createOne2One()
-    One2OneChannel SM2RE = Channel.createOne2One()
-    One2OneChannel Q2P = Channel.createOne2One()
-    One2OneChannel Q2SM = Channel.createOne2One()
-    One2OneChannel P2Q = Channel.createOne2One()
-    One2OneChannel P2R = Channel.createOne2One()
-    One2OneChannel R2GEC = Channel.createOne2One()
-    One2OneChannel R2GECClear = Channel.createOne2One()
-    One2OneChannel GEC2R = Channel.createOne2One()
+    One2OneChannel S2RE = Channel.one2one()
+    One2OneChannel RE2Q = Channel.one2one()
+    One2OneChannel SM2RE = Channel.one2one()
+    One2OneChannel Q2P = Channel.one2one()
+    One2OneChannel Q2SM = Channel.one2one()
+    One2OneChannel P2Q = Channel.one2one()
+    One2OneChannel P2R = Channel.one2one()
+    One2OneChannel R2GEC = Channel.one2one()
+    One2OneChannel R2GECClear = Channel.one2one()
+    One2OneChannel GEC2R = Channel.one2one()
     
     def nodeList = [ new Sender ( toElement: S2RE.out(), 
                                    element: element, 

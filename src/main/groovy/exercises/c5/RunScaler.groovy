@@ -6,12 +6,12 @@ import groovy_jcsp.plugAndPlay.*
 import examples.c05.Controller
 import examples.c05.ScaledData
   
-def data = Channel.createOne2One()
-def timedData = Channel.createOne2One()
-def scaledData = Channel.createOne2One()
-def oldScale = Channel.createOne2One()
-def newScale = Channel.createOne2One()
-def pause = Channel.createOne2One()
+def data = Channel.one2one()
+def timedData = Channel.one2one()
+def scaledData = Channel.one2one()
+def oldScale = Channel.one2one()
+def newScale = Channel.one2one()
+def pause = Channel.one2one()
 
 def network = [ new GNumbers ( outChannel: data.out() ),
                 new GFixedDelay ( delay: 1000, 

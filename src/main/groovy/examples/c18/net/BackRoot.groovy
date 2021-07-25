@@ -8,19 +8,19 @@ import jcsp.net.tcpip.*
 
 class BackRoot implements CSProcess{
   
-  def ChannelInput inChannel
-  def ChannelOutput outChannel
-  def int iterations
+  ChannelInput inChannel
+  ChannelOutput outChannel
+  int iterations
   def String initialValue
   def NetChannelInput backChannel
   
   void run() {
-    def One2OneChannel N2A = Channel.createOne2One()
-    def One2OneChannel A2N = Channel.createOne2One()  
-    def ChannelInput toAgentInEnd = N2A.in()
-    def ChannelInput fromAgentInEnd = A2N.in()
-    def ChannelOutput toAgentOutEnd = N2A.out()
-    def ChannelOutput fromAgentOutEnd = A2N.out()
+    def N2A = Channel.one2one()
+    def A2N = Channel.one2one()  
+    ChannelInput toAgentInEnd = N2A.in()
+    ChannelInput fromAgentInEnd = A2N.in()
+    ChannelOutput toAgentOutEnd = N2A.out()
+    ChannelOutput fromAgentOutEnd = A2N.out()
 
     def backChannelLocation = backChannel.getChannelLocation()
     
@@ -29,7 +29,7 @@ class BackRoot implements CSProcess{
     
     def rootAlt = new ALT ( [inChannel, backChannel])
     outChannel.write(theAgent)
-    def i = 1
+    int i = 1
     def running = true
     while ( running) {
       def index = rootAlt.select()

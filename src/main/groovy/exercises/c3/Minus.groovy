@@ -6,9 +6,9 @@ import groovy_jcsp.*
 
 class Minus implements CSProcess {
   
-  def ChannelInput inChannel0
-  def ChannelInput inChannel1
-  def ChannelOutput outChannel
+  ChannelInput inChannel0
+  ChannelInput inChannel1
+  ChannelOutput outChannel
   
   void run () {
 

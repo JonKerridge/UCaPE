@@ -6,10 +6,10 @@ import jcsp.lang.*
 
 class Consumer implements CSProcess {
   
-  def ChannelInput inChannel
+  ChannelInput inChannel
   
   void run() {
-    def i = inChannel.read()
+    int i = inChannel.read()
     while ( i > 0 ) {
       //insert a modified println statement
       i = inChannel.read()

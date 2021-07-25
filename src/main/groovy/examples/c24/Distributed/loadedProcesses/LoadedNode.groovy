@@ -6,8 +6,8 @@ import examples.c24.Distributed.processes.*
 
 class LoadedNode implements WorkerInterface {
   
-  def ChannelInputList inChannels       // one input channel from Reader
-  def ChannelOutputList outChannels     // N output channels to Mergers
+  ChannelInputList inChannels       // one input channel from Reader
+  ChannelOutputList outChannels     // N output channels to Mergers
  
   def N = 0
   def sourceList

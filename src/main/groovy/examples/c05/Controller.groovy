@@ -1,6 +1,6 @@
 package examples.c05
       
-// copyright 2012-18 Jon Kerridge
+// copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 
@@ -11,11 +11,11 @@ class Controller implements CSProcess {
 	
   def long testInterval = 11000
   def long computeInterval = 2000
-  def int addition = 1
+  int addition = 1
   
-  def ChannelInput factor
-  def ChannelOutput suspend
-  def ChannelOutput injector
+  ChannelInput factor
+  ChannelOutput suspend
+  ChannelOutput injector
   
   void run() {
     def currentFactor = 0

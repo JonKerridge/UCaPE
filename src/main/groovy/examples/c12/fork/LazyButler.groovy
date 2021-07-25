@@ -1,6 +1,6 @@
 package examples.c12.fork
 
-// copyright 2012-18 Jon Kerridge
+// copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 import jcsp.lang.*
@@ -9,8 +9,8 @@ import groovy_jcsp.*
 
 class LazyButler implements CSProcess {
   
-  def ChannelInputList enters
-  def ChannelInputList exits
+  ChannelInputList enters
+  ChannelInputList exits
   
   void run() {
     def seats = enters.size()
@@ -22,7 +22,7 @@ class LazyButler implements CSProcess {
     def eitherAlt = new ALT ( allChans )
     
     while (true) {
-      def i = eitherAlt.select()
+      int i = eitherAlt.select()
       allChans[i].read()
     } // end while
   } //end run

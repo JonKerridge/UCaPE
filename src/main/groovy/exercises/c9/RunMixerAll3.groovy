@@ -6,19 +6,19 @@ import groovy_jcsp.plugAndPlay.*
 
 def hoppers = 3
 
-One2OneChannel [] h2m = Channel.createOne2One(hoppers)
-One2OneChannel [] m2h = Channel.createOne2One(hoppers)
+One2OneChannel [] h2m = Channel.one2oneArray(hoppers)
+One2OneChannel [] m2h = Channel.one2oneArray(hoppers)
 
-One2OneChannel [] h2c = Channel.createOne2One(hoppers)
-One2OneChannel [] c2h = Channel.createOne2One(hoppers)
-One2OneChannel [] clearHC = Channel.createOne2One(hoppers)
+One2OneChannel [] h2c = Channel.one2oneArray(hoppers)
+One2OneChannel [] c2h = Channel.one2oneArray(hoppers)
+One2OneChannel [] clearHC = Channel.one2oneArray(hoppers)
 
-One2OneChannel b2m = Channel.createOne2One()
-One2OneChannel m2b = Channel.createOne2One()
+One2OneChannel b2m = Channel.one2one()
+One2OneChannel m2b = Channel.one2one()
 
-One2OneChannel b2c = Channel.createOne2One()
-One2OneChannel c2b = Channel.createOne2One()
-One2OneChannel clearBC = Channel.createOne2One()
+One2OneChannel b2c = Channel.one2one()
+One2OneChannel c2b = Channel.one2one()
+One2OneChannel clearBC = Channel.one2one()
 
 def hb2mList = new ChannelInputList()
 def m2hbList = new ChannelOutputList()

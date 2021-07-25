@@ -9,10 +9,10 @@ import groovy_jcsp.*
 
 class AdaptiveAgent implements MobileAgent, Serializable {
   
-  def ChannelInput fromInitialNode
-  def ChannelInput fromVisitedNode
-  def ChannelOutput toVisitedNode
-  def ChannelOutput toReturnedNode
+  ChannelInput fromInitialNode
+  ChannelInput fromVisitedNode
+  ChannelOutput toVisitedNode
+  ChannelOutput toReturnedNode
   
   def initial = true
   def visiting = false

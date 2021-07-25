@@ -12,8 +12,8 @@ import jcsp.lang.*
 
 class Emitter implements WorkerInterface  {
 	
-	def ChannelInputList inChannels
-	def ChannelOutputList outChannels
+	ChannelInputList inChannels
+	ChannelOutputList outChannels
 	
 	def connect(inChannels, outChannels){
 		this.inChannels = inChannels

@@ -1,6 +1,6 @@
 package examples.c08
 
-// copyright 2012-18 Jon Kerridge
+// copyright 2012-21 Jon Kerridge
 // Using Concurrency and Parallelism Effectively parts i & ii, 2014, bookboon.com
 
 
@@ -9,10 +9,10 @@ import jcsp.lang.*
 
 class CSMux implements CSProcess {
 	
-  def ChannelInputList inClientChannels
-  def ChannelOutputList outClientChannels
-  def ChannelInputList fromServers
-  def ChannelOutputList toServers
+  ChannelInputList inClientChannels
+  ChannelOutputList outClientChannels
+  ChannelInputList fromServers
+  ChannelOutputList toServers
   def serverAllocation = [ ]	// list of lists of keys contained in each server
   
   void run() {

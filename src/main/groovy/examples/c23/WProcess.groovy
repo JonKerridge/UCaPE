@@ -9,8 +9,8 @@ import groovy_jcsp.*
 
 class WProcess implements WorkerInterface {
 	
-	def ChannelInputList inChannels
-	def ChannelOutputList outChannels
+	ChannelInputList inChannels
+	ChannelOutputList outChannels
 	def modifier = 100
 	
 	def connect(inChannels, outChannels){

@@ -5,10 +5,10 @@ import jcsp.net2.*
 
 class GLcapability implements CSProcess, Serializable {
 	
-	def ChannelInput nameChannel
-	def ChannelInput locationChannel
-	def ChannelOutput label1Config
-	def ChannelOutput label2Config
+	ChannelInput nameChannel
+	ChannelInput locationChannel
+	ChannelOutput label1Config
+	ChannelOutput label2Config
 	def NetChannelLocation requestLocation
 	
 	void run(){

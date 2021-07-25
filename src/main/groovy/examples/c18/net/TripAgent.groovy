@@ -8,11 +8,11 @@ import groovy_jcsp.*
  
 class TripAgent implements MobileAgent {
   
-  def ChannelOutput toLocal
-  def ChannelInput fromLocal
+  ChannelOutput toLocal
+  ChannelInput fromLocal
   def tripList = [ ]
   def results = [ ]
-  def int pointer
+  int pointer
                   
   def connect ( c ) {
     this.toLocal = c[0]

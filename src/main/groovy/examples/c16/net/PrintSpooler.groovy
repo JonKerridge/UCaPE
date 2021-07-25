@@ -10,9 +10,9 @@ import jcsp.userIO.*
 
 class PrintSpooler implements CSProcess {
   
-  def ChannelInput printerRequest
-  def ChannelInput printerRelease
-  def int spoolers = 2
+  ChannelInput printerRequest
+  ChannelInput printerRelease
+  int spoolers = 2
   
   void run() {
     def spooling = 0

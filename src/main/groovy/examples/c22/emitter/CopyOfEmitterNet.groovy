@@ -42,7 +42,7 @@ class CopyOfEmitterNet implements CSProcess {
 		}
 		println "Emitter: $workers Workers have registered"
 		// send each worker a synchronisation signal
-		def channelLoc = null
+		ChannelLoc = null
 		for ( i in 0 ..< workers) {
 			channelLoc = netLocations.get (i)
 			channelLoc.write(new Signal())
