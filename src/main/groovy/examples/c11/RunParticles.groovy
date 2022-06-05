@@ -12,7 +12,7 @@ def  update = Channel.any2one()
 
 def CSIZE = Ask.Int ("Size of Canvas (200, 600)?: ", 200, 600)
 def CENTRE = CSIZE / 2
-def PARTICLES = Ask.Int ("Number of Particles (10, 200)?: ", 10, 200)
+def PARTICLES = Ask.Int ("Number of Particles (10, 800)?: ", 10, 800)
 def INIT_TEMP = 20
 
 def network = []
