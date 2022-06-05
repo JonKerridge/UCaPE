@@ -36,13 +36,13 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.codehaus.groovy:groovy-all:3.0.7'
-    implementation 'cspforjava:jcsp:1.1.9'
-    implementation 'jonkerridge:groovy_jcsp:1.1.9'
+    implementation 'org.codehaus.groovy:groovy-all:3.0.?'   // replace ? with the latest Groovy 3 release
+    implementation 'cspforjava:jcsp:1.1.10'
+    implementation 'jonkerridge:groovy_jcsp:1.1.10'
     implementation group: 'junit', name: 'junit', version: '4.13.1'
-    testImplementation group: 'org.codehaus.groovy', name: 'groovy-all', version: '3.0.7'
-    testImplementation 'cspforjava:jcsp:1.1.9'
-    testImplementation 'jonkerridge:groovy_jcsp:1.1.9'
+    testImplementation group: 'org.codehaus.groovy', name: 'groovy-all', version: '3.0.?'  // replace ? with the latest Groovy 3 release
+    testImplementation 'cspforjava:jcsp:1.1.10'
+    testImplementation 'jonkerridge:groovy_jcsp:1.1.10'
     testImplementation group: 'junit', name: 'junit', version: '4.13.1'
 }
 </pre>
