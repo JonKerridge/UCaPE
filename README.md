@@ -61,7 +61,7 @@ gpr.key=userPersonalAccessToken
 </pre>
 
 You will need to ensure that the java and groovy versions of the libraries match
-with the versions you are using in your IDE are Java 8+ and Groovy 3.0.7+
+with the versions you are using in your IDE are Java 11 and Groovy 3.0.??
 
 It should be noted that the exercises packages import code from the examples package
 and this will need to be maintained in your IDE.
