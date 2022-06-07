@@ -1,26 +1,35 @@
 apply plugin: 'groovy'
 apply plugin: 'java'
 
+String propertyFileName = "C:/Github/gradle.properties"
+File propsFile = new File(propertyFileName)
+Properties props = new Properties()
+props.load(propsFile.newDataInputStream())
+
 repositories {
-//    mavenLocal()  // for local testing of dependencies
-    mavenCentral() // to download the groovy library
-    maven { // to download the CSPforJAVA.jcsp library
-        name = "GitHubPackages"
-        url = "https://maven.pkg.github.com/CSPforJAVA/jcsp"
-        credentials {
-            username = project.findProperty("gpr.user")
-            password = project.findProperty("gpr.key")
-        }
-    }
+    mavenCentral()
+//    mavenLocal()  // for testing packages prior to final publication
     maven { // to download the jonkerridge.groovy_jcsp library
         name = "GitHubPackages"
         url = "https://maven.pkg.github.com/JonKerridge/groovyJCSP"
         credentials {
-            username = project.findProperty("gpr.user")
-            password = project.findProperty("gpr.key")
+            username = props.getProperty("gpr.user")
+            password = props.getProperty("gpr.key")
+        }
+    }
+    maven { // to download the cspforjava.jcsp library
+        name = "GitHubPackages"
+        url = "https://maven.pkg.github.com/CSPforJAVA/jcsp"
+        credentials {
+//      if using a gradle.properties file within project structure
+//            username = project.findProperty("gpr.user")
+//            password = project.findProperty("gpr.key")
+            username = props.getProperty("gpr.user")
+            password = props.getProperty("gpr.key")
         }
     }
 }
+
 
 dependencies {
     implementation group: 'org.codehaus.groovy', name: 'groovy-all', version: '3.0.11'
